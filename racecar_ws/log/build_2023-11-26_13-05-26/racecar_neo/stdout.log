@@ -1,0 +1,15 @@
+running egg_info
+writing ../../build/racecar_neo/racecar_neo.egg-info/PKG-INFO
+writing dependency_links to ../../build/racecar_neo/racecar_neo.egg-info/dependency_links.txt
+writing entry points to ../../build/racecar_neo/racecar_neo.egg-info/entry_points.txt
+writing requirements to ../../build/racecar_neo/racecar_neo.egg-info/requires.txt
+writing top-level names to ../../build/racecar_neo/racecar_neo.egg-info/top_level.txt
+reading manifest file '../../build/racecar_neo/racecar_neo.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/racecar_neo/racecar_neo.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying package.xml -> /home/racecar/racecar_ws/install/racecar_neo/share/racecar_neo

@@ -1,0 +1,124 @@
+[0.000000] (-) TimerEvent: {}
+[0.001056] (racecar_neo) JobQueued: {'identifier': 'racecar_neo', 'dependencies': OrderedDict()}
+[0.001277] (racecar_neo) JobStarted: {'identifier': 'racecar_neo'}
+[0.097970] (-) TimerEvent: {}
+[0.199347] (-) TimerEvent: {}
+[0.300290] (-) TimerEvent: {}
+[0.401611] (-) TimerEvent: {}
+[0.502302] (-) TimerEvent: {}
+[0.602991] (-) TimerEvent: {}
+[0.703792] (-) TimerEvent: {}
+[0.804513] (-) TimerEvent: {}
+[0.905208] (-) TimerEvent: {}
+[1.005897] (-) TimerEvent: {}
+[1.106561] (-) TimerEvent: {}
+[1.207200] (-) TimerEvent: {}
+[1.307887] (-) TimerEvent: {}
+[1.408575] (-) TimerEvent: {}
+[1.509243] (-) TimerEvent: {}
+[1.609951] (-) TimerEvent: {}
+[1.710641] (-) TimerEvent: {}
+[1.811497] (-) TimerEvent: {}
+[1.912388] (-) TimerEvent: {}
+[2.013027] (-) TimerEvent: {}
+[2.113820] (-) TimerEvent: {}
+[2.214640] (-) TimerEvent: {}
+[2.315373] (-) TimerEvent: {}
+[2.416053] (-) TimerEvent: {}
+[2.516817] (-) TimerEvent: {}
+[2.617516] (-) TimerEvent: {}
+[2.718189] (-) TimerEvent: {}
+[2.818833] (-) TimerEvent: {}
+[2.919468] (-) TimerEvent: {}
+[3.020108] (-) TimerEvent: {}
+[3.120760] (-) TimerEvent: {}
+[3.221465] (-) TimerEvent: {}
+[3.322184] (-) TimerEvent: {}
+[3.422852] (-) TimerEvent: {}
+[3.529394] (-) TimerEvent: {}
+[3.630226] (-) TimerEvent: {}
+[3.730979] (-) TimerEvent: {}
+[3.831817] (-) TimerEvent: {}
+[3.932624] (-) TimerEvent: {}
+[4.033516] (-) TimerEvent: {}
+[4.134617] (-) TimerEvent: {}
+[4.235820] (-) TimerEvent: {}
+[4.337076] (-) TimerEvent: {}
+[4.372879] (racecar_neo) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--uninstall', '--editable', '--build-directory', '/home/racecar/racecar_ws/build/racecar_neo/build'], 'cwd': '/home/racecar/racecar_ws/build/racecar_neo', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'racecar', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib', 'HOME': '/home/racecar', 'OLDPWD': '/home/racecar/racecar_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1315', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'iron', 'LOGNAME': 'racecar', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'racecar', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/iron/bin:/home/racecar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/racecar-desktop:@/tmp/.ICE-unix/1296,unix/racecar-desktop:/tmp/.ICE-unix/1296', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/9a70376c_0dbb_4369_bc39_0c2abad57282', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.WMLYE2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.103', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/iron', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/racecar/racecar_ws/build/racecar_neo', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/racecar/racecar_ws/build/racecar_neo/prefix_override:/home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[4.437192] (-) TimerEvent: {}
+[4.537882] (-) TimerEvent: {}
+[4.638588] (-) TimerEvent: {}
+[4.739268] (-) TimerEvent: {}
+[4.839975] (-) TimerEvent: {}
+[4.940633] (-) TimerEvent: {}
+[5.041338] (-) TimerEvent: {}
+[5.142071] (-) TimerEvent: {}
+[5.242784] (-) TimerEvent: {}
+[5.343667] (-) TimerEvent: {}
+[5.444357] (-) TimerEvent: {}
+[5.545152] (-) TimerEvent: {}
+[5.646171] (-) TimerEvent: {}
+[5.746877] (-) TimerEvent: {}
+[5.777820] (racecar_neo) StdoutLine: {'line': b'running develop\n'}
+[5.847046] (-) TimerEvent: {}
+[5.947737] (-) TimerEvent: {}
+[6.048378] (-) TimerEvent: {}
+[6.148980] (-) TimerEvent: {}
+[6.249579] (-) TimerEvent: {}
+[6.350225] (-) TimerEvent: {}
+[6.450959] (-) TimerEvent: {}
+[6.551661] (-) TimerEvent: {}
+[6.652291] (-) TimerEvent: {}
+[6.752914] (-) TimerEvent: {}
+[6.853551] (-) TimerEvent: {}
+[6.876043] (racecar_neo) StdoutLine: {'line': b'Removing /home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages/racecar-neo.egg-link (link to .)\n'}
+[6.953896] (-) TimerEvent: {}
+[7.044028] (racecar_neo) CommandEnded: {'returncode': 0}
+[7.049780] (racecar_neo) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/racecar_neo', 'build', '--build-base', '/home/racecar/racecar_ws/build/racecar_neo/build', 'install', '--record', '/home/racecar/racecar_ws/build/racecar_neo/install.log', '--single-version-externally-managed'], 'cwd': '/home/racecar/racecar_ws/src/racecar_neo', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'racecar', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib', 'HOME': '/home/racecar', 'OLDPWD': '/home/racecar/racecar_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1315', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'iron', 'LOGNAME': 'racecar', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'racecar', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/iron/bin:/home/racecar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/racecar-desktop:@/tmp/.ICE-unix/1296,unix/racecar-desktop:/tmp/.ICE-unix/1296', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/9a70376c_0dbb_4369_bc39_0c2abad57282', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.WMLYE2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.103', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/iron', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/racecar/racecar_ws/build/racecar_neo', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/racecar/racecar_ws/build/racecar_neo/prefix_override:/home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[7.056884] (-) TimerEvent: {}
+[7.157927] (-) TimerEvent: {}
+[7.258631] (-) TimerEvent: {}
+[7.359419] (-) TimerEvent: {}
+[7.460151] (-) TimerEvent: {}
+[7.560895] (-) TimerEvent: {}
+[7.661579] (-) TimerEvent: {}
+[7.762245] (-) TimerEvent: {}
+[7.863032] (-) TimerEvent: {}
+[7.963736] (-) TimerEvent: {}
+[8.064393] (-) TimerEvent: {}
+[8.165072] (-) TimerEvent: {}
+[8.265804] (-) TimerEvent: {}
+[8.366472] (-) TimerEvent: {}
+[8.399085] (racecar_neo) StdoutLine: {'line': b'running egg_info\n'}
+[8.401698] (racecar_neo) StdoutLine: {'line': b'writing ../../build/racecar_neo/racecar_neo.egg-info/PKG-INFO\n'}
+[8.403640] (racecar_neo) StdoutLine: {'line': b'writing dependency_links to ../../build/racecar_neo/racecar_neo.egg-info/dependency_links.txt\n'}
+[8.405015] (racecar_neo) StdoutLine: {'line': b'writing entry points to ../../build/racecar_neo/racecar_neo.egg-info/entry_points.txt\n'}
+[8.405689] (racecar_neo) StdoutLine: {'line': b'writing requirements to ../../build/racecar_neo/racecar_neo.egg-info/requires.txt\n'}
+[8.406364] (racecar_neo) StdoutLine: {'line': b'writing top-level names to ../../build/racecar_neo/racecar_neo.egg-info/top_level.txt\n'}
+[8.414784] (racecar_neo) StdoutLine: {'line': b"reading manifest file '../../build/racecar_neo/racecar_neo.egg-info/SOURCES.txt'\n"}
+[8.417393] (racecar_neo) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[8.420063] (racecar_neo) StdoutLine: {'line': b"writing manifest file '../../build/racecar_neo/racecar_neo.egg-info/SOURCES.txt'\n"}
+[8.426344] (racecar_neo) StdoutLine: {'line': b'running build\n'}
+[8.426875] (racecar_neo) StdoutLine: {'line': b'running build_py\n'}
+[8.446570] (racecar_neo) StdoutLine: {'line': b'running install\n'}
+[8.449169] (racecar_neo) StdoutLine: {'line': b'running install_lib\n'}
+[8.455092] (racecar_neo) StdoutLine: {'line': b'creating /home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages/racecar_neo\n'}
+[8.455881] (racecar_neo) StdoutLine: {'line': b'copying /home/racecar/racecar_ws/build/racecar_neo/build/lib/racecar_neo/test_node.py -> /home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages/racecar_neo\n'}
+[8.457613] (racecar_neo) StdoutLine: {'line': b'copying /home/racecar/racecar_ws/build/racecar_neo/build/lib/racecar_neo/__init__.py -> /home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages/racecar_neo\n'}
+[8.460489] (racecar_neo) StdoutLine: {'line': b'byte-compiling /home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages/racecar_neo/test_node.py to test_node.cpython-310.pyc\n'}
+[8.462401] (racecar_neo) StdoutLine: {'line': b'byte-compiling /home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages/racecar_neo/__init__.py to __init__.cpython-310.pyc\n'}
+[8.463585] (racecar_neo) StdoutLine: {'line': b'running install_data\n'}
+[8.466610] (-) TimerEvent: {}
+[8.468134] (racecar_neo) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.474971] (racecar_neo) StdoutLine: {'line': b'Copying ../../build/racecar_neo/racecar_neo.egg-info to /home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages/racecar_neo-0.0.0-py3.10.egg-info\n'}
+[8.481064] (racecar_neo) StdoutLine: {'line': b'running install_scripts\n'}
+[8.558467] (racecar_neo) StdoutLine: {'line': b'Installing test_node script to /home/racecar/racecar_ws/install/racecar_neo/lib/racecar_neo\n'}
+[8.566766] (-) TimerEvent: {}
+[8.577592] (racecar_neo) StdoutLine: {'line': b"writing list of installed files to '/home/racecar/racecar_ws/build/racecar_neo/install.log'\n"}
+[8.667142] (-) TimerEvent: {}
+[8.718451] (racecar_neo) CommandEnded: {'returncode': 0}
+[8.767239] (-) TimerEvent: {}
+[8.868502] (-) TimerEvent: {}
+[8.969789] (-) TimerEvent: {}
+[9.041253] (racecar_neo) JobEnded: {'identifier': 'racecar_neo', 'rc': 0}
+[9.044435] (-) EventReactorShutdown: {}

@@ -1,0 +1,21 @@
+[4.095s] Invoking command in '/home/racecar/racecar_ws/build/racecar_neo': PYTHONPATH=/home/racecar/racecar_ws/build/racecar_neo/prefix_override:/home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/racecar/racecar_ws/build/racecar_neo/build --no-deps install_data
+[5.543s] running develop
+[6.648s] running egg_info
+[6.649s] writing racecar_neo.egg-info/PKG-INFO
+[6.650s] writing dependency_links to racecar_neo.egg-info/dependency_links.txt
+[6.651s] writing entry points to racecar_neo.egg-info/entry_points.txt
+[6.651s] writing requirements to racecar_neo.egg-info/requires.txt
+[6.652s] writing top-level names to racecar_neo.egg-info/top_level.txt
+[6.661s] reading manifest file 'racecar_neo.egg-info/SOURCES.txt'
+[6.665s] writing manifest file 'racecar_neo.egg-info/SOURCES.txt'
+[6.671s] running build_ext
+[6.671s] Creating /home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages/racecar-neo.egg-link (link to .)
+[6.675s] Installing gamepad script to /home/racecar/racecar_ws/install/racecar_neo/lib/racecar_neo
+[6.675s] Installing imu script to /home/racecar/racecar_ws/install/racecar_neo/lib/racecar_neo
+[6.676s] Installing mux script to /home/racecar/racecar_ws/install/racecar_neo/lib/racecar_neo
+[6.677s] Installing pwm script to /home/racecar/racecar_ws/install/racecar_neo/lib/racecar_neo
+[6.678s] Installing throttle script to /home/racecar/racecar_ws/install/racecar_neo/lib/racecar_neo
+[6.679s] 
+[6.679s] Installed /home/racecar/racecar_ws/build/racecar_neo
+[6.680s] running install_data
+[6.843s] Invoked command in '/home/racecar/racecar_ws/build/racecar_neo' returned '0': PYTHONPATH=/home/racecar/racecar_ws/build/racecar_neo/prefix_override:/home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/racecar/racecar_ws/build/racecar_neo/build --no-deps install_data

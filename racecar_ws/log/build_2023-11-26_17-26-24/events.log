@@ -1,0 +1,155 @@
+[0.000000] (-) TimerEvent: {}
+[0.001570] (racecar_neo) JobQueued: {'identifier': 'racecar_neo', 'dependencies': OrderedDict()}
+[0.002288] (ydlidar_ros2_driver) JobQueued: {'identifier': 'ydlidar_ros2_driver', 'dependencies': OrderedDict()}
+[0.002579] (racecar_neo) JobStarted: {'identifier': 'racecar_neo'}
+[0.098996] (-) TimerEvent: {}
+[0.199761] (-) TimerEvent: {}
+[0.300807] (-) TimerEvent: {}
+[0.399679] (ydlidar_ros2_driver) JobStarted: {'identifier': 'ydlidar_ros2_driver'}
+[0.401043] (-) TimerEvent: {}
+[0.504838] (-) TimerEvent: {}
+[0.606727] (-) TimerEvent: {}
+[0.708114] (-) TimerEvent: {}
+[0.809375] (-) TimerEvent: {}
+[0.910072] (-) TimerEvent: {}
+[1.010743] (-) TimerEvent: {}
+[1.111636] (-) TimerEvent: {}
+[1.212631] (-) TimerEvent: {}
+[1.313345] (-) TimerEvent: {}
+[1.414063] (-) TimerEvent: {}
+[1.514731] (-) TimerEvent: {}
+[1.615405] (-) TimerEvent: {}
+[1.716070] (-) TimerEvent: {}
+[1.816839] (-) TimerEvent: {}
+[1.917534] (-) TimerEvent: {}
+[2.018265] (-) TimerEvent: {}
+[2.119103] (-) TimerEvent: {}
+[2.220330] (-) TimerEvent: {}
+[2.321210] (-) TimerEvent: {}
+[2.422129] (-) TimerEvent: {}
+[2.489770] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'cmake'}
+[2.495383] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'build'}
+[2.498465] (ydlidar_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/racecar/racecar_ws/build/ydlidar_ros2_driver', '--', '-j4', '-l4'], 'cwd': '/home/racecar/racecar_ws/build/ydlidar_ros2_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'racecar'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/racecar'), ('OLDPWD', '/home/racecar'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1344'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'racecar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'racecar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/iron/bin:/home/racecar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/racecar-desktop:@/tmp/.ICE-unix/1327,unix/racecar-desktop:/tmp/.ICE-unix/1327'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/07e7a268_bd7e_462d_9705_fd8db0bf5ce5'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BOI8E2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.108'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/iron'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/racecar/racecar_ws/build/ydlidar_ros2_driver'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/iron')]), 'shell': False}
+[2.522296] (-) TimerEvent: {}
+[2.623092] (-) TimerEvent: {}
+[2.724098] (-) TimerEvent: {}
+[2.825450] (-) TimerEvent: {}
+[2.926309] (-) TimerEvent: {}
+[3.027410] (-) TimerEvent: {}
+[3.120496] (ydlidar_ros2_driver) StdoutLine: {'line': b'[ 50%] Built target ydlidar_ros2_driver_node\n'}
+[3.125371] (ydlidar_ros2_driver) StdoutLine: {'line': b'[100%] Built target ydlidar_ros2_driver_client\n'}
+[3.127601] (-) TimerEvent: {}
+[3.167274] (ydlidar_ros2_driver) CommandEnded: {'returncode': 0}
+[3.227836] (-) TimerEvent: {}
+[3.309591] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'install'}
+[3.328112] (-) TimerEvent: {}
+[3.345882] (ydlidar_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/racecar/racecar_ws/build/ydlidar_ros2_driver'], 'cwd': '/home/racecar/racecar_ws/build/ydlidar_ros2_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'racecar'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/racecar'), ('OLDPWD', '/home/racecar'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1344'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'racecar'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'racecar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/iron/bin:/home/racecar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/racecar-desktop:@/tmp/.ICE-unix/1327,unix/racecar-desktop:/tmp/.ICE-unix/1327'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/07e7a268_bd7e_462d_9705_fd8db0bf5ce5'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BOI8E2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.108'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/iron'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/racecar/racecar_ws/build/ydlidar_ros2_driver'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/iron')]), 'shell': False}
+[3.384525] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.389294] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[3.393760] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_node\n'}
+[3.395400] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_client\n'}
+[3.404208] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/.ipynb_checkpoints/ydlidar_launch-checkpoint.py\n'}
+[3.405174] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar.py\n'}
+[3.406515] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch.py\n'}
+[3.407928] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch_view.py\n'}
+[3.413116] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/.ipynb_checkpoints/X4-checkpoint.yaml\n'}
+[3.414543] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/.ipynb_checkpoints/ydlidar-checkpoint.yaml\n'}
+[3.415416] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G1.yaml\n'}
+[3.416301] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G2.yaml\n'}
+[3.417172] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G6.yaml\n'}
+[3.418150] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/TG.yaml\n'}
+[3.419104] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/TminiPro.yaml\n'}
+[3.419938] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X2.yaml\n'}
+[3.420803] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X4-Pro.yaml\n'}
+[3.421666] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X4.yaml\n'}
+[3.422549] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/ydlidar.yaml\n'}
+[3.425178] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup/initenv.sh\n'}
+[3.427559] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config/ydlidar.rviz\n'}
+[3.428105] (-) TimerEvent: {}
+[3.430989] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/package_run_dependencies/ydlidar_ros2_driver\n'}
+[3.433262] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/parent_prefix_path/ydlidar_ros2_driver\n'}
+[3.435361] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.sh\n'}
+[3.436993] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.dsv\n'}
+[3.438678] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.sh\n'}
+[3.440361] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.dsv\n'}
+[3.442142] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.bash\n'}
+[3.443550] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.sh\n'}
+[3.445115] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.zsh\n'}
+[3.446692] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.dsv\n'}
+[3.447482] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv\n'}
+[3.487338] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/packages/ydlidar_ros2_driver\n'}
+[3.489343] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig.cmake\n'}
+[3.490751] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig-version.cmake\n'}
+[3.491860] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/racecar/racecar_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.xml\n'}
+[3.497802] (ydlidar_ros2_driver) CommandEnded: {'returncode': 0}
+[3.528310] (-) TimerEvent: {}
+[3.629078] (-) TimerEvent: {}
+[3.732261] (-) TimerEvent: {}
+[3.834472] (-) TimerEvent: {}
+[3.935642] (-) TimerEvent: {}
+[4.036633] (-) TimerEvent: {}
+[4.139756] (-) TimerEvent: {}
+[4.241487] (-) TimerEvent: {}
+[4.342642] (-) TimerEvent: {}
+[4.444455] (-) TimerEvent: {}
+[4.507684] (ydlidar_ros2_driver) JobEnded: {'identifier': 'ydlidar_ros2_driver', 'rc': 0}
+[4.544693] (-) TimerEvent: {}
+[4.645802] (-) TimerEvent: {}
+[4.746524] (-) TimerEvent: {}
+[4.847234] (-) TimerEvent: {}
+[4.948171] (-) TimerEvent: {}
+[5.049435] (-) TimerEvent: {}
+[5.115690] (racecar_neo) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/racecar/racecar_ws/build/racecar_neo/build', '--no-deps', 'install_data'], 'cwd': '/home/racecar/racecar_ws/build/racecar_neo', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'racecar', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib', 'HOME': '/home/racecar', 'OLDPWD': '/home/racecar', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1344', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'iron', 'LOGNAME': 'racecar', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'racecar', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/iron/bin:/home/racecar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/racecar-desktop:@/tmp/.ICE-unix/1327,unix/racecar-desktop:/tmp/.ICE-unix/1327', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/07e7a268_bd7e_462d_9705_fd8db0bf5ce5', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.BOI8E2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.108', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/iron', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/racecar/racecar_ws/build/racecar_neo', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/racecar/racecar_ws/build/racecar_neo/prefix_override:/home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[5.149565] (-) TimerEvent: {}
+[5.250321] (-) TimerEvent: {}
+[5.350988] (-) TimerEvent: {}
+[5.451711] (-) TimerEvent: {}
+[5.552493] (-) TimerEvent: {}
+[5.653167] (-) TimerEvent: {}
+[5.753821] (-) TimerEvent: {}
+[5.854545] (-) TimerEvent: {}
+[5.955219] (-) TimerEvent: {}
+[6.056004] (-) TimerEvent: {}
+[6.156680] (-) TimerEvent: {}
+[6.257337] (-) TimerEvent: {}
+[6.358144] (-) TimerEvent: {}
+[6.459147] (-) TimerEvent: {}
+[6.559846] (-) TimerEvent: {}
+[6.610416] (racecar_neo) StdoutLine: {'line': b'running develop\n'}
+[6.660008] (-) TimerEvent: {}
+[6.760713] (-) TimerEvent: {}
+[6.861385] (-) TimerEvent: {}
+[6.962104] (-) TimerEvent: {}
+[7.062742] (-) TimerEvent: {}
+[7.163439] (-) TimerEvent: {}
+[7.264106] (-) TimerEvent: {}
+[7.364774] (-) TimerEvent: {}
+[7.465462] (-) TimerEvent: {}
+[7.566212] (-) TimerEvent: {}
+[7.666967] (-) TimerEvent: {}
+[7.713749] (racecar_neo) StdoutLine: {'line': b'running egg_info\n'}
+[7.714480] (racecar_neo) StdoutLine: {'line': b'writing racecar_neo.egg-info/PKG-INFO\n'}
+[7.715632] (racecar_neo) StdoutLine: {'line': b'writing dependency_links to racecar_neo.egg-info/dependency_links.txt\n'}
+[7.716536] (racecar_neo) StdoutLine: {'line': b'writing entry points to racecar_neo.egg-info/entry_points.txt\n'}
+[7.717405] (racecar_neo) StdoutLine: {'line': b'writing requirements to racecar_neo.egg-info/requires.txt\n'}
+[7.718113] (racecar_neo) StdoutLine: {'line': b'writing top-level names to racecar_neo.egg-info/top_level.txt\n'}
+[7.727778] (racecar_neo) StdoutLine: {'line': b"reading manifest file 'racecar_neo.egg-info/SOURCES.txt'\n"}
+[7.731624] (racecar_neo) StdoutLine: {'line': b"writing manifest file 'racecar_neo.egg-info/SOURCES.txt'\n"}
+[7.737511] (racecar_neo) StdoutLine: {'line': b'running build_ext\n'}
+[7.738445] (racecar_neo) StdoutLine: {'line': b'Creating /home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages/racecar-neo.egg-link (link to .)\n'}
+[7.741899] (racecar_neo) StdoutLine: {'line': b'Installing gamepad script to /home/racecar/racecar_ws/install/racecar_neo/lib/racecar_neo\n'}
+[7.742778] (racecar_neo) StdoutLine: {'line': b'Installing mux script to /home/racecar/racecar_ws/install/racecar_neo/lib/racecar_neo\n'}
+[7.743611] (racecar_neo) StdoutLine: {'line': b'Installing pwm script to /home/racecar/racecar_ws/install/racecar_neo/lib/racecar_neo\n'}
+[7.744388] (racecar_neo) StdoutLine: {'line': b'Installing throttle script to /home/racecar/racecar_ws/install/racecar_neo/lib/racecar_neo\n'}
+[7.745609] (racecar_neo) StdoutLine: {'line': b'\n'}
+[7.746268] (racecar_neo) StdoutLine: {'line': b'Installed /home/racecar/racecar_ws/build/racecar_neo\n'}
+[7.746701] (racecar_neo) StdoutLine: {'line': b'running install_data\n'}
+[7.767256] (-) TimerEvent: {}
+[7.868633] (-) TimerEvent: {}
+[7.919610] (racecar_neo) CommandEnded: {'returncode': 0}
+[7.968742] (-) TimerEvent: {}
+[8.070101] (-) TimerEvent: {}
+[8.171462] (-) TimerEvent: {}
+[8.272730] (-) TimerEvent: {}
+[8.291709] (racecar_neo) JobEnded: {'identifier': 'racecar_neo', 'rc': 0}
+[8.294463] (-) EventReactorShutdown: {}

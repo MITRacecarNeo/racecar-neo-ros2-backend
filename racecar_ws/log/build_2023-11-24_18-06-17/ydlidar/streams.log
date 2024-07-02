@@ -1,0 +1,850 @@
+[1.871s] Invoking command in '/home/racecar/racecar_ws/build/ydlidar': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/racecar/racecar_ws/src/ydlidar_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/racecar/racecar_ws/install/ydlidar
+[2.139s] -- The C compiler identification is GNU 11.4.0
+[2.402s] -- The CXX compiler identification is GNU 11.4.0
+[2.430s] -- Detecting C compiler ABI info
+[2.740s] -- Detecting C compiler ABI info - done
+[2.766s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.766s] -- Detecting C compile features
+[2.768s] -- Detecting C compile features - done
+[2.779s] -- Detecting CXX compiler ABI info
+[3.120s] -- Detecting CXX compiler ABI info - done
+[3.147s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.148s] -- Detecting CXX compile features
+[3.149s] -- Detecting CXX compile features - done
+[3.175s] -- Found ament_cmake: 2.0.3 (/opt/ros/iron/share/ament_cmake/cmake)
+[4.151s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[4.464s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.726s] -- Found rclcpp: 21.0.4 (/opt/ros/iron/share/rclcpp/cmake)
+[5.069s] -- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+[5.154s] -- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+[5.259s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.382s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.158s] -- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)
+[6.180s] -- Found rmw_fastrtps_cpp: 7.1.2 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)
+[6.807s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[7.075s] -- Found FastRTPS: /opt/ros/iron/include  
+[7.502s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[8.200s] -- Found sensor_msgs: 5.0.0 (/opt/ros/iron/share/sensor_msgs/cmake)
+[9.023s] -- Found visualization_msgs: 5.0.0 (/opt/ros/iron/share/visualization_msgs/cmake)
+[9.607s] -- Found ament_lint_auto: 0.14.2 (/opt/ros/iron/share/ament_lint_auto/cmake)
+[10.073s] -- Added test 'copyright' to check source files copyright and LICENSE
+[10.360s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[10.361s] -- Configured cppcheck include dirs: /home/racecar/racecar_ws/src/ydlidar_ros2/src;/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include;/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/src
+[10.362s] -- Configured cppcheck exclude dirs and/or files: 
+[10.647s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[10.648s] -- Configured cpplint exclude dirs and/or files: 
+[10.685s] -- Added test 'flake8' to check Python code syntax and style conventions
+[10.685s] -- Configured 'flake8' exclude dirs and/or files: 
+[10.758s] -- Added test 'lint_cmake' to check CMake code style
+[10.795s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[11.081s] -- Added test 'uncrustify' to check C / C++ code style
+[11.081s] -- Configured uncrustify additional arguments: 
+[11.119s] -- Added test 'xmllint' to check XML markup files
+[11.126s] -- Configuring done
+[11.214s] -- Generating done
+[11.221s] -- Build files have been written to: /home/racecar/racecar_ws/build/ydlidar
+[11.261s] Invoked command in '/home/racecar/racecar_ws/build/ydlidar' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/racecar/racecar_ws/src/ydlidar_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/racecar/racecar_ws/install/ydlidar
+[11.271s] Invoking command in '/home/racecar/racecar_ws/build/ydlidar': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/racecar/racecar_ws/build/ydlidar -- -j4 -l4
+[11.479s] [ 18%] [32mBuilding CXX object CMakeFiles/ydlidar_node.dir/src/ydlidar_node.cpp.o[0m
+[11.481s] [ 18%] [32mBuilding CXX object CMakeFiles/ydlidar_client.dir/src/ydlidar_client.cpp.o[0m
+[11.482s] [ 27%] [32mBuilding CXX object CMakeFiles/ydlidar_node.dir/sdk/src/CYdLidar.cpp.o[0m
+[11.486s] [ 36%] [32mBuilding CXX object CMakeFiles/ydlidar_node.dir/sdk/src/impl/unix/list_ports_linux.cpp.o[0m
+[13.553s] In file included from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/serial.h:9[m[K,
+[13.555s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/src/impl/unix/list_ports_linux.cpp:26[m[K:
+[13.556s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:[m[K In function ‘[01m[Kbool ydlidar::fileExists(std::string)[m[K’:
+[13.557s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ino[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[13.558s]   240 |   struct stat info = {0[01;35m[K}[m[K;
+[13.559s]       |                        [01;35m[K^[m[K
+[13.560s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[13.561s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_nlink[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[13.561s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_uid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[13.562s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_gid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[13.563s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_rdev[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[13.564s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[13.565s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[13.578s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[13.580s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[13.581s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blocks[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[13.582s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_atim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[13.583s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mtim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[13.584s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ctim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[13.585s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__glibc_reserved[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[13.586s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/src/impl/unix/list_ports_linux.cpp:[m[K In function ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> > glob(const std::vector<std::__cxx11::basic_string<char> >&)[m[K’:
+[13.587s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/src/impl/unix/list_ports_linux.cpp:58:7:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kglob_retval[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[13.588s]    58 |   int [01;35m[Kglob_retval[m[K = glob(patterns[0].c_str(), 0, NULL, &glob_results);
+[13.588s]       |       [01;35m[K^~~~~~~~~~~[m[K
+[14.334s] In file included from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/serial.h:9[m[K,
+[14.336s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/ydlidar_driver.h:54[m[K,
+[14.337s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/CYdLidar.h:36[m[K,
+[14.339s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/src/CYdLidar.cpp:34[m[K:
+[14.340s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:[m[K In function ‘[01m[Kbool ydlidar::fileExists(std::string)[m[K’:
+[14.342s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ino[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[14.344s]   240 |   struct stat info = {0[01;35m[K}[m[K;
+[14.345s]       |                        [01;35m[K^[m[K
+[14.347s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[14.350s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_nlink[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[14.351s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_uid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[14.352s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_gid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[14.359s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_rdev[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[14.360s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[14.362s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[14.362s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[14.363s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[14.364s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blocks[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[14.365s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_atim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[14.366s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mtim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[14.367s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ctim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[14.368s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__glibc_reserved[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[14.389s] In file included from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/ydlidar_driver.h:56[m[K,
+[14.390s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/CYdLidar.h:36[m[K,
+[14.392s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/src/CYdLidar.cpp:34[m[K:
+[14.394s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/thread.h:[m[K In static member function ‘[01m[Kstatic Thread Thread::createThread(thread_proc_t, void*)[m[K’:
+[14.396s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/thread.h:43:57:[m[K [01;35m[Kwarning: [m[Kcast between incompatible function types from ‘[01m[Kthread_proc_t[m[K’ {aka ‘[01m[Klong unsigned int (*)(void*)[m[K’} to ‘[01m[Kvoid* (*)(void*)[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcast-function-type-Wcast-function-type]8;;[m[K]
+[14.398s]    43 |     pthread_create((pthread_t *)&thread_._handle, NULL, [01;35m[K(void *(*)(void *))proc[m[K,
+[14.400s]       |                                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[14.429s] In file included from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/ydlidar_driver.h:58[m[K,
+[14.431s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/CYdLidar.h:36[m[K,
+[14.432s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/src/CYdLidar.cpp:34[m[K:
+[14.434s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/help_info.h:[m[K In function ‘[01m[Kbool ydlidar::isSupportMotorCtrl(int)[m[K’:
+[14.435s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/help_info.h:414:8:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kret[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[14.437s]   414 |   bool [01;35m[Kret[m[K = false;
+[14.438s]       |        [01;35m[K^~~[m[K
+[14.754s] [ 45%] [32mBuilding CXX object CMakeFiles/ydlidar_node.dir/sdk/src/impl/unix/unix_serial.cpp.o[0m
+[15.445s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/src/CYdLidar.cpp:[m[K In member function ‘[01m[Kbool CYdLidar::doProcessSimple(LaserScan&, bool&)[m[K’:
+[15.447s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/src/CYdLidar.cpp:216:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[15.448s]   216 |     for (int i = 0; [01;35m[Ki < count[m[K; i++) {
+[15.449s]       |                     [01;35m[K~~^~~~~~~[m[K
+[16.220s] In file included from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/ydlidar_driver.h:58[m[K,
+[16.222s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/CYdLidar.h:36[m[K,
+[16.227s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/src/CYdLidar.cpp:34[m[K:
+[16.229s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/help_info.h:[m[K In function ‘[01m[Kbool ydlidar::ParseLaserDebugInfo(const LaserDebug&, device_info&)[m[K’:
+[16.231s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/help_info.h:679:67:[m[K [01;35m[Kwarning: [m[K‘[01m[Ksprintf[m[K’ writing a terminating nul past the end of the destination [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-overflow=-Wformat-overflow=]8;;[m[K]
+[16.232s]   679 |       sprintf(reinterpret_cast<char *>(value.serialnum + 8), "%08d[01;35m[K"[m[K, Number);
+[16.233s]       |                                                                   [01;35m[K^[m[K
+[16.235s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/help_info.h:679:14:[m[K [01;36m[Knote: [m[K‘[01m[Ksprintf[m[K’ output 9 bytes into a destination of size 8
+[16.247s]   679 |       [01;36m[Ksprintf(reinterpret_cast<char *>(value.serialnum + 8), "%08d", Number)[m[K;
+[16.249s]       |       [01;36m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[17.325s] In file included from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/serial.h:9[m[K,
+[17.326s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/src/impl/unix/unix_serial.h:9[m[K,
+[17.327s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/src/impl/unix/unix_serial.cpp:39[m[K:
+[17.328s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:[m[K In function ‘[01m[Kbool ydlidar::fileExists(std::string)[m[K’:
+[17.329s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ino[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[17.330s]   240 |   struct stat info = {0[01;35m[K}[m[K;
+[17.331s]       |                        [01;35m[K^[m[K
+[17.332s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[17.333s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_nlink[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[17.347s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_uid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[17.349s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_gid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[17.350s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_rdev[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[17.351s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[17.352s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[17.353s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[17.354s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[17.355s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blocks[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[17.356s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_atim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[17.357s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mtim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[17.358s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ctim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[17.371s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__glibc_reserved[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[17.381s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/src/impl/unix/unix_serial.cpp:[m[K In member function ‘[01m[Kbool serial::Serial::SerialImpl::setCustomBaudRate(long unsigned int)[m[K’:
+[17.382s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/src/impl/unix/unix_serial.cpp:1235:40:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Klong unsigned int[m[K’ and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[17.383s]  1235 |   if ([01;35m[Kserial.custom_divisor * baudrate != serial.baud_base[m[K) {
+[17.384s]       |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[17.772s] [ 54%] [32mBuilding CXX object CMakeFiles/ydlidar_node.dir/sdk/src/impl/unix/unix_timer.cpp.o[0m
+[18.022s] [ 63%] [32mBuilding C object CMakeFiles/ydlidar_node.dir/sdk/src/lock.c.o[0m
+[18.593s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/src/lock.c:[m[K In function ‘[01m[Kfhs_lock[m[K’:
+[18.595s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/src/lock.c:199:40:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[18.596s]   199 | int fhs_lock(const char *filename, [01;35m[Kint pid[m[K) {
+[18.597s]       |                                    [01;35m[K~~~~^~~[m[K
+[18.600s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/src/lock.c:[m[K In function ‘[01m[Kuucp_lock[m[K’:
+[18.601s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/src/lock.c:281:41:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[18.603s]   281 | int uucp_lock(const char *filename, [01;35m[Kint pid[m[K) {
+[18.604s]       |                                     [01;35m[K~~~~^~~[m[K
+[18.782s] [ 72%] [32mBuilding CXX object CMakeFiles/ydlidar_node.dir/sdk/src/serial.cpp.o[0m
+[19.309s] In file included from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/timer.h:2[m[K,
+[19.310s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/src/impl/unix/unix_timer.cpp:2[m[K:
+[19.311s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:[m[K In function ‘[01m[Kbool ydlidar::fileExists(std::string)[m[K’:
+[19.312s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ino[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[19.313s]   240 |   struct stat info = {0[01;35m[K}[m[K;
+[19.314s]       |                        [01;35m[K^[m[K
+[19.315s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[19.315s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_nlink[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[19.316s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_uid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[19.317s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_gid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[19.318s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_rdev[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[19.331s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[19.332s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[19.333s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[19.334s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[19.335s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blocks[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[19.336s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_atim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[19.337s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mtim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[19.337s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ctim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[19.338s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__glibc_reserved[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[19.544s] [ 81%] [32mBuilding CXX object CMakeFiles/ydlidar_node.dir/sdk/src/ydlidar_driver.cpp.o[0m
+[22.153s] In file included from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/serial.h:9[m[K,
+[22.154s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/src/serial.cpp:11[m[K:
+[22.157s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:[m[K In function ‘[01m[Kbool ydlidar::fileExists(std::string)[m[K’:
+[22.158s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ino[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[22.159s]   240 |   struct stat info = {0[01;35m[K}[m[K;
+[22.161s]       |                        [01;35m[K^[m[K
+[22.162s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[22.163s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_nlink[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[22.163s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_uid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[22.164s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_gid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[22.165s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_rdev[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[22.166s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[22.179s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[22.180s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[22.181s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[22.182s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blocks[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[22.183s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_atim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[22.184s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mtim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[22.185s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ctim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[22.186s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__glibc_reserved[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[22.514s] In file included from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/src/common.h:47[m[K,
+[22.515s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/src/serial.cpp:12[m[K:
+[22.516s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/thread.h:[m[K In static member function ‘[01m[Kstatic Thread Thread::createThread(thread_proc_t, void*)[m[K’:
+[22.517s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/thread.h:43:57:[m[K [01;35m[Kwarning: [m[Kcast between incompatible function types from ‘[01m[Kthread_proc_t[m[K’ {aka ‘[01m[Klong unsigned int (*)(void*)[m[K’} to ‘[01m[Kvoid* (*)(void*)[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcast-function-type-Wcast-function-type]8;;[m[K]
+[22.518s]    43 |     pthread_create((pthread_t *)&thread_._handle, NULL, [01;35m[K(void *(*)(void *))proc[m[K,
+[22.519s]       |                                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[22.772s] In file included from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/serial.h:9[m[K,
+[22.774s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/ydlidar_driver.h:54[m[K,
+[22.776s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/src/ydlidar_driver.cpp:34[m[K:
+[22.778s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:[m[K In function ‘[01m[Kbool ydlidar::fileExists(std::string)[m[K’:
+[22.780s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ino[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[22.781s]   240 |   struct stat info = {0[01;35m[K}[m[K;
+[22.783s]       |                        [01;35m[K^[m[K
+[22.785s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[22.791s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_nlink[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[22.792s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_uid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[22.793s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_gid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[22.795s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_rdev[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[22.796s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[22.797s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[22.815s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[22.817s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[22.819s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blocks[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[22.820s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_atim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[22.821s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mtim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[22.822s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ctim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[22.824s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__glibc_reserved[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[22.837s] In file included from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/ydlidar_driver.h:56[m[K,
+[22.838s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/src/ydlidar_driver.cpp:34[m[K:
+[22.840s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/thread.h:[m[K In static member function ‘[01m[Kstatic Thread Thread::createThread(thread_proc_t, void*)[m[K’:
+[22.842s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/thread.h:43:57:[m[K [01;35m[Kwarning: [m[Kcast between incompatible function types from ‘[01m[Kthread_proc_t[m[K’ {aka ‘[01m[Klong unsigned int (*)(void*)[m[K’} to ‘[01m[Kvoid* (*)(void*)[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcast-function-type-Wcast-function-type]8;;[m[K]
+[22.844s]    43 |     pthread_create((pthread_t *)&thread_._handle, NULL, [01;35m[K(void *(*)(void *))proc[m[K,
+[22.845s]       |                                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[22.880s] In file included from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/ydlidar_driver.h:58[m[K,
+[22.881s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/src/ydlidar_driver.cpp:34[m[K:
+[22.883s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/help_info.h:[m[K In function ‘[01m[Kbool ydlidar::isSupportMotorCtrl(int)[m[K’:
+[22.884s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/help_info.h:414:8:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kret[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[22.886s]   414 |   bool [01;35m[Kret[m[K = false;
+[22.887s]       |        [01;35m[K^~~[m[K
+[23.288s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/src/ydlidar_driver.cpp:[m[K In member function ‘[01m[Kresult_t ydlidar::YDlidarDriver::waitPackage(node_info*, uint32_t)[m[K’:
+[23.289s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/src/ydlidar_driver.cpp:992:95:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around arithmetic in operand of ‘[01m[K|[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[23.291s]   992 |                                          [01;35m[Kpackages.packageSampleDistance[package_Sample_Index] &[m[K
+[23.292s]       |                                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[23.294s]   993 | [01;35m[K                                         0x0003[m[K)) << LIDAR_RESP_MEASUREMENT_QUALITY_SHIFT;
+[23.295s]       |                                          [01;35m[K~~~~~~[m[K                                                
+[27.081s] In file included from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/serial.h:9[m[K,
+[27.082s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/ydlidar_driver.h:54[m[K,
+[27.083s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/CYdLidar.h:36[m[K,
+[27.083s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:26[m[K:
+[27.084s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:[m[K In function ‘[01m[Kbool ydlidar::fileExists(std::string)[m[K’:
+[27.085s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ino[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[27.085s]   240 |   struct stat info = {0[01;35m[K}[m[K;
+[27.086s]       |                        [01;35m[K^[m[K
+[27.086s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[27.087s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_nlink[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[27.088s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_uid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[27.088s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_gid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[27.089s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_rdev[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[27.089s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[27.090s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[27.091s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[27.091s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[27.092s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blocks[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[27.093s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_atim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[27.093s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mtim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[27.094s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ctim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[27.095s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/v8stdint.h:240:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__glibc_reserved[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[27.099s] In file included from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/ydlidar_driver.h:56[m[K,
+[27.099s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/CYdLidar.h:36[m[K,
+[27.100s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:26[m[K:
+[27.101s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/thread.h:[m[K In static member function ‘[01m[Kstatic Thread Thread::createThread(thread_proc_t, void*)[m[K’:
+[27.101s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/thread.h:43:57:[m[K [01;35m[Kwarning: [m[Kcast between incompatible function types from ‘[01m[Kthread_proc_t[m[K’ {aka ‘[01m[Klong unsigned int (*)(void*)[m[K’} to ‘[01m[Kvoid* (*)(void*)[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcast-function-type-Wcast-function-type]8;;[m[K]
+[27.102s]    43 |     pthread_create((pthread_t *)&thread_._handle, NULL, [01;35m[K(void *(*)(void *))proc[m[K,
+[27.102s]       |                                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[27.121s] In file included from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/ydlidar_driver.h:58[m[K,
+[27.121s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/CYdLidar.h:36[m[K,
+[27.122s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:26[m[K:
+[27.122s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/help_info.h:[m[K In function ‘[01m[Kbool ydlidar::isSupportMotorCtrl(int)[m[K’:
+[27.123s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/sdk/include/help_info.h:414:8:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kret[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[27.124s]   414 |   bool [01;35m[Kret[m[K = false;
+[27.124s]       |        [01;35m[K^~~[m[K
+[27.164s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[27.165s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:78:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [5])[m[K’
+[27.167s]    78 |   [01;31m[Knode->declare_parameter("port")[m[K;
+[27.168s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[27.170s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.172s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.172s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.173s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.173s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[27.174s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[27.177s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.179s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[27.181s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:78:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.184s]    78 |   [01;36m[Knode->declare_parameter("port")[m[K;
+[27.185s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[27.186s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.186s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.187s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.188s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.188s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[27.189s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[27.189s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.190s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[27.191s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:78:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[27.191s]    78 |   [01;36m[Knode->declare_parameter("port")[m[K;
+[27.192s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[27.192s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.193s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.194s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.197s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.198s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[27.198s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[27.199s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.199s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.200s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[27.201s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[27.201s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.202s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.202s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:81:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [9])[m[K’
+[27.203s]    81 |   [01;31m[Knode->declare_parameter("frame_id")[m[K;
+[27.203s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[27.204s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.205s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.205s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.206s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.206s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[27.207s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[27.207s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.208s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[27.208s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:81:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.209s]    81 |   [01;36m[Knode->declare_parameter("frame_id")[m[K;
+[27.209s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[27.210s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.211s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.211s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.212s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.212s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[27.213s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[27.213s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.214s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[27.215s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:81:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[27.215s]    81 |   [01;36m[Knode->declare_parameter("frame_id")[m[K;
+[27.216s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[27.216s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.217s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.218s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.218s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.219s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[27.220s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[27.220s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.221s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.221s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[27.222s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[27.223s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.223s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.224s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:84:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [13])[m[K’
+[27.224s]    84 |   [01;31m[Knode->declare_parameter("ignore_array")[m[K;
+[27.225s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[27.225s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.226s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.226s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.227s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.228s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[27.228s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[27.229s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.229s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[27.230s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:84:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.231s]    84 |   [01;36m[Knode->declare_parameter("ignore_array")[m[K;
+[27.231s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[27.232s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.232s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.233s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.233s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.234s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[27.235s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[27.235s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.236s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[27.236s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:84:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[27.237s]    84 |   [01;36m[Knode->declare_parameter("ignore_array")[m[K;
+[27.238s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[27.239s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.239s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.240s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.241s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.241s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[27.242s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[27.242s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.243s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.244s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[27.244s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[27.245s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.245s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.246s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:87:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [9])[m[K’
+[27.246s]    87 |   [01;31m[Knode->declare_parameter("baudrate")[m[K;
+[27.247s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[27.248s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.248s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.250s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.250s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.251s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[27.251s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[27.252s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.252s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[27.253s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:87:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.254s]    87 |   [01;36m[Knode->declare_parameter("baudrate")[m[K;
+[27.254s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[27.255s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.256s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.256s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.257s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.257s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[27.258s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[27.259s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.259s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[27.260s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:87:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[27.260s]    87 |   [01;36m[Knode->declare_parameter("baudrate")[m[K;
+[27.261s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[27.262s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.263s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.263s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.264s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.264s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[27.265s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[27.265s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.266s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.267s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[27.267s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[27.268s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.268s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.269s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:90:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [10])[m[K’
+[27.269s]    90 |   [01;31m[Knode->declare_parameter("samp_rate")[m[K;
+[27.270s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[27.271s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.271s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.272s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.272s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.273s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[27.273s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[27.274s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.275s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[27.275s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:90:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.276s]    90 |   [01;36m[Knode->declare_parameter("samp_rate")[m[K;
+[27.276s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[27.277s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.277s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.278s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.278s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.279s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[27.280s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[27.280s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.281s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[27.281s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:90:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[27.282s]    90 |   [01;36m[Knode->declare_parameter("samp_rate")[m[K;
+[27.282s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[27.283s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.284s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.284s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.285s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.285s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[27.286s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[27.287s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.287s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.288s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[27.288s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[27.289s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.289s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.290s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:93:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [17])[m[K’
+[27.290s]    93 |   [01;31m[Knode->declare_parameter("resolution_fixed")[m[K;
+[27.291s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[27.291s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.292s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.292s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.293s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.293s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[27.294s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[27.297s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.298s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[27.298s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:93:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.299s]    93 |   [01;36m[Knode->declare_parameter("resolution_fixed")[m[K;
+[27.299s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[27.300s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.301s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.301s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.302s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.302s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[27.303s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[27.303s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.304s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[27.304s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:93:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[27.305s]    93 |   [01;36m[Knode->declare_parameter("resolution_fixed")[m[K;
+[27.306s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[27.306s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.307s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.308s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.308s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.309s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[27.309s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[27.310s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.311s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.311s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[27.312s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[27.313s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.313s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.314s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:96:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [14])[m[K’
+[27.315s]    96 |   [01;31m[Knode->declare_parameter("singleChannel")[m[K;
+[27.315s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[27.316s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.316s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.317s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.317s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.318s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[27.319s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[27.319s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.320s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[27.320s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:96:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.321s]    96 |   [01;36m[Knode->declare_parameter("singleChannel")[m[K;
+[27.321s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[27.322s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.322s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.323s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.324s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.324s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[27.325s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[27.325s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.326s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[27.327s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:96:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[27.327s]    96 |   [01;36m[Knode->declare_parameter("singleChannel")[m[K;
+[27.328s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[27.328s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.329s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.330s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.330s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.331s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[27.331s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[27.332s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.333s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.333s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[27.334s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[27.335s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.335s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.336s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:99:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [15])[m[K’
+[27.337s]    99 |   [01;31m[Knode->declare_parameter("auto_reconnect")[m[K;
+[27.337s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[27.338s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.338s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.339s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.339s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.340s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[27.341s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[27.341s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.342s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[27.342s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:99:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.343s]    99 |   [01;36m[Knode->declare_parameter("auto_reconnect")[m[K;
+[27.344s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[27.344s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.345s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.345s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.346s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.346s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[27.347s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[27.347s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.348s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[27.349s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:99:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[27.349s]    99 |   [01;36m[Knode->declare_parameter("auto_reconnect")[m[K;
+[27.350s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[27.350s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.351s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.351s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.352s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.352s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[27.353s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[27.353s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.354s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.354s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[27.355s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[27.355s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.356s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.356s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:102:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [10])[m[K’
+[27.357s]   102 |   [01;31m[Knode->declare_parameter("reversion")[m[K;
+[27.357s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[27.358s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.358s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.359s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.359s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.360s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[27.361s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[27.361s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.361s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[27.362s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:102:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.363s]   102 |   [01;36m[Knode->declare_parameter("reversion")[m[K;
+[27.363s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[27.364s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.364s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.365s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.365s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.366s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[27.367s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[27.367s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.368s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[27.368s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:102:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[27.369s]   102 |   [01;36m[Knode->declare_parameter("reversion")[m[K;
+[27.369s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[27.370s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.370s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.371s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.372s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.372s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[27.373s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[27.373s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.375s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.375s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[27.376s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[27.376s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.377s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.378s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:105:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [11])[m[K’
+[27.378s]   105 |   [01;31m[Knode->declare_parameter("isToFLidar")[m[K;
+[27.379s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[27.379s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.380s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.380s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.381s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.382s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[27.382s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[27.383s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.383s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[27.384s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:105:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.385s]   105 |   [01;36m[Knode->declare_parameter("isToFLidar")[m[K;
+[27.385s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[27.386s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.386s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.387s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.387s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.388s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[27.389s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[27.389s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.390s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[27.390s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:105:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[27.391s]   105 |   [01;36m[Knode->declare_parameter("isToFLidar")[m[K;
+[27.391s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[27.392s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.393s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.393s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.394s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.395s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[27.397s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[27.397s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.398s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.399s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[27.399s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[27.400s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.401s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.401s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:108:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [10])[m[K’
+[27.402s]   108 |   [01;31m[Knode->declare_parameter("angle_max")[m[K;
+[27.403s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[27.403s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.404s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.404s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.405s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.406s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[27.406s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[27.407s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.407s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[27.408s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:108:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.409s]   108 |   [01;36m[Knode->declare_parameter("angle_max")[m[K;
+[27.409s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[27.410s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.411s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.411s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.412s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.412s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[27.413s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[27.414s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.414s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[27.415s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:108:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[27.415s]   108 |   [01;36m[Knode->declare_parameter("angle_max")[m[K;
+[27.416s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[27.417s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.417s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.418s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.418s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.419s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[27.420s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[27.420s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.421s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.422s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[27.422s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[27.423s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.424s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.424s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:111:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [10])[m[K’
+[27.425s]   111 |   [01;31m[Knode->declare_parameter("angle_min")[m[K;
+[27.425s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[27.426s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.427s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.427s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.428s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.428s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[27.429s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[27.430s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.430s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[27.431s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:111:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.431s]   111 |   [01;36m[Knode->declare_parameter("angle_min")[m[K;
+[27.432s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[27.432s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.433s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.434s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.434s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.435s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[27.435s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[27.436s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.437s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[27.437s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:111:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[27.438s]   111 |   [01;36m[Knode->declare_parameter("angle_min")[m[K;
+[27.438s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[27.439s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.440s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.440s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.441s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.441s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[27.442s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[27.443s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.443s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.444s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[27.445s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[27.445s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.446s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.446s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:114:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [10])[m[K’
+[27.447s]   114 |   [01;31m[Knode->declare_parameter("max_range")[m[K;
+[27.448s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[27.448s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.449s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.449s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.450s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.451s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[27.451s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[27.452s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.453s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[27.454s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:114:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.454s]   114 |   [01;36m[Knode->declare_parameter("max_range")[m[K;
+[27.455s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[27.455s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.456s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.457s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.457s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.458s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[27.458s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[27.459s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.460s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[27.460s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:114:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[27.461s]   114 |   [01;36m[Knode->declare_parameter("max_range")[m[K;
+[27.461s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[27.462s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.463s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.463s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.464s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.464s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[27.465s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[27.466s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.466s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.467s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[27.467s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[27.468s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.469s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.469s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:117:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [10])[m[K’
+[27.470s]   117 |   [01;31m[Knode->declare_parameter("min_range")[m[K;
+[27.470s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[27.471s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.472s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.472s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.473s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.473s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[27.474s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[27.474s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.475s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[27.475s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:117:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.476s]   117 |   [01;36m[Knode->declare_parameter("min_range")[m[K;
+[27.477s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[27.477s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.478s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.479s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.479s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.480s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[27.480s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[27.481s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.482s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[27.482s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:117:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[27.483s]   117 |   [01;36m[Knode->declare_parameter("min_range")[m[K;
+[27.484s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[27.484s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.485s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.485s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.486s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.486s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[27.487s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[27.488s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.488s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.489s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[27.489s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[27.490s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.491s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.491s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:120:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [10])[m[K’
+[27.492s]   120 |   [01;31m[Knode->declare_parameter("frequency")[m[K;
+[27.492s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[27.493s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.493s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.494s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.495s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.495s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[27.496s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[27.497s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.498s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[27.498s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:120:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.499s]   120 |   [01;36m[Knode->declare_parameter("frequency")[m[K;
+[27.499s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[27.500s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.500s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.501s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.502s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.502s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[27.503s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[27.503s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.504s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[27.505s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:120:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[27.505s]   120 |   [01;36m[Knode->declare_parameter("frequency")[m[K;
+[27.506s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[27.507s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[27.507s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[27.508s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[27.508s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:23[m[K:
+[27.509s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[27.510s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[27.510s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.511s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.511s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[27.512s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[27.513s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[27.513s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[27.514s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2/src/ydlidar_node.cpp:208:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<LaserPoint>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[27.514s]   208 |       for(int i=0; [01;35m[Ki < scan.points.size()[m[K; i++) {
+[27.515s]       |                    [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[31.674s] gmake[2]: *** [CMakeFiles/ydlidar_node.dir/build.make:76: CMakeFiles/ydlidar_node.dir/src/ydlidar_node.cpp.o] Error 1
+[31.674s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ydlidar_node.dir/all] Error 2
+[31.675s] gmake[1]: *** Waiting for unfinished jobs....
+[45.898s] [ 90%] [32m[1mLinking CXX executable ydlidar_client[0m
+[47.812s] [ 90%] Built target ydlidar_client
+[47.816s] gmake: *** [Makefile:146: all] Error 2
+[47.822s] Invoked command in '/home/racecar/racecar_ws/build/ydlidar' returned '2': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/racecar/racecar_ws/build/ydlidar -- -j4 -l4

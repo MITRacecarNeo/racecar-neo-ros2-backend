@@ -1,0 +1,4 @@
+Invoking command in '/home/racecar/racecar_ws/build/ydlidar': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/racecar/racecar_ws/src/ydlidar_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/racecar/racecar_ws/install/ydlidar
+Invoked command in '/home/racecar/racecar_ws/build/ydlidar' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake /home/racecar/racecar_ws/src/ydlidar_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/racecar/racecar_ws/install/ydlidar
+Invoking command in '/home/racecar/racecar_ws/build/ydlidar': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/racecar/racecar_ws/build/ydlidar -- -j4 -l4
+Invoked command in '/home/racecar/racecar_ws/build/ydlidar' returned '2': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/racecar/racecar_ws/build/ydlidar -- -j4 -l4

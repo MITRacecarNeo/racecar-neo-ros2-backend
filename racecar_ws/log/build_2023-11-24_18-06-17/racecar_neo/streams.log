@@ -1,0 +1,17 @@
+[4.514s] Invoking command in '/home/racecar/racecar_ws/build/racecar_neo': PYTHONPATH=/home/racecar/racecar_ws/build/racecar_neo/prefix_override:/home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/racecar/racecar_ws/build/racecar_neo/build --no-deps install_data
+[6.012s] running develop
+[7.210s] running egg_info
+[7.210s] writing racecar_neo.egg-info/PKG-INFO
+[7.211s] writing dependency_links to racecar_neo.egg-info/dependency_links.txt
+[7.212s] writing entry points to racecar_neo.egg-info/entry_points.txt
+[7.213s] writing requirements to racecar_neo.egg-info/requires.txt
+[7.214s] writing top-level names to racecar_neo.egg-info/top_level.txt
+[7.221s] reading manifest file 'racecar_neo.egg-info/SOURCES.txt'
+[7.225s] writing manifest file 'racecar_neo.egg-info/SOURCES.txt'
+[7.231s] running build_ext
+[7.231s] Creating /home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages/racecar-neo.egg-link (link to .)
+[7.235s] Installing test_node script to /home/racecar/racecar_ws/install/racecar_neo/lib/racecar_neo
+[7.236s] 
+[7.237s] Installed /home/racecar/racecar_ws/build/racecar_neo
+[7.238s] running install_data
+[7.406s] Invoked command in '/home/racecar/racecar_ws/build/racecar_neo' returned '0': PYTHONPATH=/home/racecar/racecar_ws/build/racecar_neo/prefix_override:/home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/racecar/racecar_ws/build/racecar_neo/build --no-deps install_data

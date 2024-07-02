@@ -1,0 +1,4 @@
+[0.000000] (-) TimerEvent: {}
+[0.001228] (-) JobUnselected: {'identifier': 'racecar_neo'}
+[0.001598] (-) JobUnselected: {'identifier': 'ydlidar'}
+[0.002317] (-) EventReactorShutdown: {}

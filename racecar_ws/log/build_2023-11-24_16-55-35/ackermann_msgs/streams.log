@@ -1,0 +1,33 @@
+[0.345s] Invoking command in '/home/racecar/racecar_ws/build/ackermann_msgs': /usr/bin/cmake /home/racecar/racecar_ws/src/ackermann_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/racecar/racecar_ws/install/ackermann_msgs
+[1.171s] -- The C compiler identification is GNU 11.4.0
+[1.910s] -- The CXX compiler identification is GNU 11.4.0
+[1.962s] -- Detecting C compiler ABI info
+[2.340s] -- Detecting C compiler ABI info - done
+[2.371s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.373s] -- Detecting C compile features
+[2.377s] -- Detecting C compile features - done
+[2.396s] -- Detecting CXX compiler ABI info
+[2.766s] -- Detecting CXX compiler ABI info - done
+[2.796s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.797s] -- Detecting CXX compile features
+[2.799s] -- Detecting CXX compile features - done
+[2.985s] [31mCMake Error at CMakeLists.txt:4 (find_package):
+[2.985s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[2.986s]   asked CMake to find a package configuration file provided by "catkin", but
+[2.986s]   CMake did not find one.
+[2.986s] 
+[2.987s]   Could not find a package configuration file provided by "catkin" with any
+[2.987s]   of the following names:
+[2.987s] 
+[2.988s]     catkinConfig.cmake
+[2.988s]     catkin-config.cmake
+[2.989s] 
+[2.989s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[2.990s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[2.991s]   provides a separate development package or SDK, be sure it has been
+[2.991s]   installed.
+[2.991s] 
+[2.992s] [0m
+[2.992s] -- Configuring incomplete, errors occurred!
+[2.992s] See also "/home/racecar/racecar_ws/build/ackermann_msgs/CMakeFiles/CMakeOutput.log".
+[2.996s] Invoked command in '/home/racecar/racecar_ws/build/ackermann_msgs' returned '1': /usr/bin/cmake /home/racecar/racecar_ws/src/ackermann_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/racecar/racecar_ws/install/ackermann_msgs

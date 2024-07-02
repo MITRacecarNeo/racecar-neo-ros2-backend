@@ -1,0 +1,807 @@
+[0.292s] Invoking command in '/home/racecar/racecar_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/racecar/racecar_ws/build/ydlidar_ros2_driver -- -j4 -l4
+[0.467s] [35m[1mConsolidate compiler generated dependencies of target ydlidar_ros2_driver_node[0m
+[0.467s] [35m[1mConsolidate compiler generated dependencies of target ydlidar_ros2_driver_client[0m
+[0.558s] [ 75%] [32mBuilding CXX object CMakeFiles/ydlidar_ros2_driver_node.dir/src/ydlidar_ros2_driver_node.cpp.o[0m
+[0.559s] [ 75%] Built target ydlidar_ros2_driver_client
+[11.762s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[11.763s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:44:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [5])[m[K’
+[11.765s]    44 |   [01;31m[Knode->declare_parameter("port")[m[K;
+[11.766s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[11.767s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.768s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.769s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.771s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.773s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[11.774s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[11.775s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.775s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.776s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:44:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.777s]    44 |   [01;36m[Knode->declare_parameter("port")[m[K;
+[11.777s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[11.777s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.778s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.779s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.783s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.783s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[11.785s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[11.787s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.792s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.794s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:44:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[11.794s]    44 |   [01;36m[Knode->declare_parameter("port")[m[K;
+[11.795s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[11.795s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.796s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.796s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.797s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.797s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[11.798s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[11.800s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.801s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.801s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[11.802s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[11.803s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.803s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.804s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:51:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [13])[m[K’
+[11.805s]    51 |   [01;31m[Knode->declare_parameter("ignore_array")[m[K;
+[11.806s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[11.806s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.807s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.807s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.808s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.808s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[11.809s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[11.810s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.810s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.811s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:51:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.811s]    51 |   [01;36m[Knode->declare_parameter("ignore_array")[m[K;
+[11.812s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[11.813s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.814s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.815s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.815s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.816s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[11.817s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[11.817s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.818s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.818s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:51:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[11.819s]    51 |   [01;36m[Knode->declare_parameter("ignore_array")[m[K;
+[11.819s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[11.820s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.821s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.822s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.823s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.824s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[11.824s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[11.825s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.826s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.827s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[11.827s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[11.828s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.829s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.830s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:56:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [9])[m[K’
+[11.831s]    56 |   [01;31m[Knode->declare_parameter("frame_id")[m[K;
+[11.831s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[11.832s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.833s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.834s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.834s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.835s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[11.835s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[11.836s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.837s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.838s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:56:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.838s]    56 |   [01;36m[Knode->declare_parameter("frame_id")[m[K;
+[11.839s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[11.839s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.839s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.840s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.840s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.841s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[11.841s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[11.842s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.842s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.843s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:56:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[11.843s]    56 |   [01;36m[Knode->declare_parameter("frame_id")[m[K;
+[11.844s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[11.844s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.844s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.845s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.845s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.845s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[11.846s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[11.846s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.846s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.847s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[11.848s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[11.848s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.848s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.849s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:62:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [9])[m[K’
+[11.849s]    62 |   [01;31m[Knode->declare_parameter("baudrate")[m[K;
+[11.849s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[11.850s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.850s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.850s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.851s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.851s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[11.852s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[11.852s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.853s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.853s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:62:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.853s]    62 |   [01;36m[Knode->declare_parameter("baudrate")[m[K;
+[11.853s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[11.854s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.854s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.854s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.855s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.855s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[11.856s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[11.856s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.856s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.857s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:62:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[11.857s]    62 |   [01;36m[Knode->declare_parameter("baudrate")[m[K;
+[11.857s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[11.858s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.858s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.858s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.859s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.859s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[11.860s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[11.860s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.860s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.861s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[11.861s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[11.862s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.862s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.862s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:67:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [11])[m[K’
+[11.863s]    67 |   [01;31m[Knode->declare_parameter("lidar_type")[m[K;
+[11.863s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[11.864s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.864s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.865s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.865s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.865s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[11.866s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[11.866s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.867s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.867s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:67:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.867s]    67 |   [01;36m[Knode->declare_parameter("lidar_type")[m[K;
+[11.868s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[11.868s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.868s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.869s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.869s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.869s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[11.870s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[11.870s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.870s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.871s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:67:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[11.871s]    67 |   [01;36m[Knode->declare_parameter("lidar_type")[m[K;
+[11.872s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[11.872s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.872s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.873s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.873s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.873s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[11.874s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[11.874s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.875s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.875s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[11.875s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[11.876s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.876s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.877s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:72:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [12])[m[K’
+[11.877s]    72 |   [01;31m[Knode->declare_parameter("device_type")[m[K;
+[11.878s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[11.878s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.878s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.879s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.879s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.879s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[11.880s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[11.880s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.881s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.881s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:72:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.881s]    72 |   [01;36m[Knode->declare_parameter("device_type")[m[K;
+[11.882s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[11.882s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.882s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.883s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.883s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.884s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[11.885s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[11.885s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.886s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.886s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:72:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[11.886s]    72 |   [01;36m[Knode->declare_parameter("device_type")[m[K;
+[11.887s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[11.887s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.887s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.888s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.889s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.889s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[11.889s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[11.890s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.890s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.891s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[11.891s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[11.891s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.892s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.892s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:77:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [12])[m[K’
+[11.893s]    77 |   [01;31m[Knode->declare_parameter("sample_rate")[m[K;
+[11.893s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[11.893s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.894s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.894s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.894s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.895s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[11.895s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[11.895s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.896s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.896s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:77:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.897s]    77 |   [01;36m[Knode->declare_parameter("sample_rate")[m[K;
+[11.897s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[11.897s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.898s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.898s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.898s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.899s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[11.899s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[11.899s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.900s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.900s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:77:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[11.900s]    77 |   [01;36m[Knode->declare_parameter("sample_rate")[m[K;
+[11.901s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[11.901s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.902s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.902s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.902s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.903s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[11.903s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[11.903s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.904s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.904s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[11.905s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[11.905s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.905s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.906s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:82:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [21])[m[K’
+[11.906s]    82 |   [01;31m[Knode->declare_parameter("abnormal_check_count")[m[K;
+[11.906s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.907s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.907s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.908s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.908s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.908s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[11.909s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[11.909s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.909s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.910s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:82:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.910s]    82 |   [01;36m[Knode->declare_parameter("abnormal_check_count")[m[K;
+[11.911s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.911s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.911s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.912s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.912s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.912s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[11.913s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[11.913s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.913s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.914s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:82:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[11.914s]    82 |   [01;36m[Knode->declare_parameter("abnormal_check_count")[m[K;
+[11.915s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.915s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.915s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.916s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.916s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.917s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[11.917s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[11.918s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.918s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.918s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[11.919s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[11.919s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.919s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.920s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:90:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [17])[m[K’
+[11.920s]    90 |   [01;31m[Knode->declare_parameter("fixed_resolution")[m[K;
+[11.920s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[11.921s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.921s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.922s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.922s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.922s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[11.923s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[11.923s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.923s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.924s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:90:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.924s]    90 |   [01;36m[Knode->declare_parameter("fixed_resolution")[m[K;
+[11.925s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[11.925s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.925s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.926s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.926s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.926s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[11.927s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[11.927s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.927s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.928s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:90:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[11.928s]    90 |   [01;36m[Knode->declare_parameter("fixed_resolution")[m[K;
+[11.929s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[11.929s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.929s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.930s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.930s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.930s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[11.931s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[11.931s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.932s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.932s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[11.932s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[11.933s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.933s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.934s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:95:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [10])[m[K’
+[11.934s]    95 |   [01;31m[Knode->declare_parameter("reversion")[m[K;
+[11.934s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[11.935s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.935s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.935s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.936s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.936s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[11.937s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[11.937s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.938s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.938s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:95:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.938s]    95 |   [01;36m[Knode->declare_parameter("reversion")[m[K;
+[11.939s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[11.939s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.939s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.940s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.940s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.941s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[11.942s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[11.942s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.942s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.943s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:95:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[11.943s]    95 |   [01;36m[Knode->declare_parameter("reversion")[m[K;
+[11.943s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[11.944s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.944s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.945s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.945s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.945s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[11.946s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[11.946s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.947s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.947s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[11.947s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[11.948s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.948s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.948s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:100:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [9])[m[K’
+[11.949s]   100 |   [01;31m[Knode->declare_parameter("inverted")[m[K;
+[11.949s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[11.950s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.950s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.950s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.951s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.951s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[11.952s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[11.952s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.952s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.953s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:100:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.953s]   100 |   [01;36m[Knode->declare_parameter("inverted")[m[K;
+[11.953s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[11.954s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.954s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.954s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.955s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.955s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[11.955s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[11.956s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.956s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.957s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:100:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[11.957s]   100 |   [01;36m[Knode->declare_parameter("inverted")[m[K;
+[11.957s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[11.958s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.958s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.958s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.959s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.959s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[11.959s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[11.960s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.960s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.961s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[11.961s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[11.961s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.962s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.962s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:104:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [15])[m[K’
+[11.962s]   104 |   [01;31m[Knode->declare_parameter("auto_reconnect")[m[K;
+[11.963s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[11.963s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.963s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.964s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.964s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.964s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[11.965s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[11.965s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.965s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.966s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:104:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.966s]   104 |   [01;36m[Knode->declare_parameter("auto_reconnect")[m[K;
+[11.966s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[11.967s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.967s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.968s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.968s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.969s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[11.969s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[11.969s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.970s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.970s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:104:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[11.970s]   104 |   [01;36m[Knode->declare_parameter("auto_reconnect")[m[K;
+[11.971s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[11.971s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.971s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.972s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.972s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.973s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[11.973s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[11.973s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.974s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.974s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[11.974s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[11.975s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.975s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.976s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:109:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [16])[m[K’
+[11.976s]   109 |   [01;31m[Knode->declare_parameter("isSingleChannel")[m[K;
+[11.976s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[11.977s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.977s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.977s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.978s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.978s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[11.978s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[11.979s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.979s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.979s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:109:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.980s]   109 |   [01;36m[Knode->declare_parameter("isSingleChannel")[m[K;
+[11.980s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[11.980s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.981s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.981s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.981s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.982s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[11.982s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[11.983s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.983s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.984s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:109:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[11.985s]   109 |   [01;36m[Knode->declare_parameter("isSingleChannel")[m[K;
+[11.985s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[11.986s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.986s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.987s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.987s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.987s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[11.988s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[11.988s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.988s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.989s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[11.989s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[11.989s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.990s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.990s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:114:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [10])[m[K’
+[11.990s]   114 |   [01;31m[Knode->declare_parameter("intensity")[m[K;
+[11.991s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[11.991s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.991s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.992s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.992s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.993s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[11.993s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[11.993s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.994s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.994s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:114:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[11.994s]   114 |   [01;36m[Knode->declare_parameter("intensity")[m[K;
+[11.995s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[11.995s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.995s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[11.996s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[11.996s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[11.996s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[11.997s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[11.997s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[11.997s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[11.998s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:114:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[11.998s]   114 |   [01;36m[Knode->declare_parameter("intensity")[m[K;
+[11.998s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[11.999s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[11.999s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[12.000s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[12.000s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[12.000s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[12.001s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[12.001s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.001s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[12.002s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[12.002s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[12.003s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.003s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[12.003s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:119:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [18])[m[K’
+[12.004s]   119 |   [01;31m[Knode->declare_parameter("support_motor_dtr")[m[K;
+[12.004s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.004s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[12.005s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[12.005s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[12.005s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[12.006s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[12.006s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[12.006s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.007s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.007s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:119:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[12.007s]   119 |   [01;36m[Knode->declare_parameter("support_motor_dtr")[m[K;
+[12.008s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.008s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[12.009s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[12.009s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[12.009s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[12.010s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[12.010s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[12.010s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.011s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.011s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:119:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[12.011s]   119 |   [01;36m[Knode->declare_parameter("support_motor_dtr")[m[K;
+[12.012s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[12.012s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[12.012s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[12.013s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[12.013s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[12.014s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[12.014s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[12.014s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.015s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[12.015s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[12.015s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[12.016s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.016s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[12.017s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:126:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [10])[m[K’
+[12.017s]   126 |   [01;31m[Knode->declare_parameter("angle_max")[m[K;
+[12.017s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[12.018s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[12.018s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[12.018s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[12.019s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[12.019s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[12.019s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[12.020s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.020s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.020s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:126:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[12.021s]   126 |   [01;36m[Knode->declare_parameter("angle_max")[m[K;
+[12.021s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[12.021s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[12.022s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[12.022s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[12.022s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[12.023s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[12.023s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[12.023s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.024s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.024s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:126:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[12.025s]   126 |   [01;36m[Knode->declare_parameter("angle_max")[m[K;
+[12.025s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[12.025s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[12.026s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[12.026s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[12.026s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[12.027s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[12.027s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[12.027s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.028s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[12.028s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[12.029s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[12.029s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.029s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[12.030s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:130:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [10])[m[K’
+[12.030s]   130 |   [01;31m[Knode->declare_parameter("angle_min")[m[K;
+[12.030s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[12.031s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[12.031s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[12.031s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[12.032s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[12.032s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[12.032s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[12.033s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.033s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.033s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:130:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[12.034s]   130 |   [01;36m[Knode->declare_parameter("angle_min")[m[K;
+[12.034s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[12.034s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[12.035s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[12.035s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[12.035s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[12.036s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[12.036s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[12.036s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.037s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.037s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:130:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[12.038s]   130 |   [01;36m[Knode->declare_parameter("angle_min")[m[K;
+[12.038s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[12.038s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[12.039s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[12.039s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[12.040s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[12.040s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[12.040s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[12.041s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.041s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[12.042s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[12.042s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[12.042s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.043s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[12.043s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:135:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [10])[m[K’
+[12.043s]   135 |   [01;31m[Knode->declare_parameter("range_max")[m[K;
+[12.044s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[12.044s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[12.045s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[12.045s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[12.045s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[12.046s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[12.046s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[12.047s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.047s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.048s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:135:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[12.048s]   135 |   [01;36m[Knode->declare_parameter("range_max")[m[K;
+[12.048s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[12.049s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[12.049s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[12.049s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[12.050s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[12.050s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[12.050s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[12.051s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.051s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.051s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:135:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[12.052s]   135 |   [01;36m[Knode->declare_parameter("range_max")[m[K;
+[12.052s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[12.053s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[12.053s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[12.053s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[12.054s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[12.054s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[12.054s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[12.055s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.055s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[12.055s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[12.056s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[12.056s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.056s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[12.057s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:139:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [10])[m[K’
+[12.057s]   139 |   [01;31m[Knode->declare_parameter("range_min")[m[K;
+[12.057s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[12.058s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[12.058s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[12.058s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[12.059s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[12.059s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[12.059s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[12.060s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.060s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.060s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:139:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[12.061s]   139 |   [01;36m[Knode->declare_parameter("range_min")[m[K;
+[12.061s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[12.061s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[12.062s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[12.062s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[12.062s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[12.063s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[12.063s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[12.063s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.064s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.064s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:139:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[12.065s]   139 |   [01;36m[Knode->declare_parameter("range_min")[m[K;
+[12.065s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[12.065s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[12.066s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[12.066s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[12.066s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[12.067s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[12.067s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[12.067s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.068s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[12.068s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[12.069s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[12.069s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.069s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[12.069s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:144:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [10])[m[K’
+[12.070s]   144 |   [01;31m[Knode->declare_parameter("frequency")[m[K;
+[12.070s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[12.070s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[12.071s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[12.071s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[12.071s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[12.072s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[12.072s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[12.073s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.073s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.073s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:144:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[12.073s]   144 |   [01;36m[Knode->declare_parameter("frequency")[m[K;
+[12.074s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[12.074s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[12.074s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[12.075s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[12.075s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[12.075s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[12.076s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[12.076s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.077s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.077s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:144:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[12.077s]   144 |   [01;36m[Knode->declare_parameter("frequency")[m[K;
+[12.078s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[12.078s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[12.078s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[12.079s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[12.079s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[12.079s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[12.080s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[12.080s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.080s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[12.080s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[12.081s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[12.081s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.081s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[12.082s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:149:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::declare_parameter(const char [21])[m[K’
+[12.082s]   149 |   [01;31m[Knode->declare_parameter("invalid_range_is_inf")[m[K;
+[12.082s]       |   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.083s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[12.083s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[12.083s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[12.084s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[12.084s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)[m[K’
+[12.085s]   479 |   [01;36m[Kdeclare_parameter[m[K(
+[12.085s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.086s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:479:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.086s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:149:26:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[12.087s]   149 |   [01;36m[Knode->declare_parameter("invalid_range_is_inf")[m[K;
+[12.087s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.087s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[12.088s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[12.088s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[12.088s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[12.089s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)[m[K’
+[12.089s]   492 |   [01;36m[Kdeclare_parameter[m[K(
+[12.089s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.090s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:492:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[12.090s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:149:26:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KParameterT[m[K’
+[12.091s]   149 |   [01;36m[Knode->declare_parameter("invalid_range_is_inf")[m[K;
+[12.091s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.091s] In file included from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[12.092s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[12.092s]                  from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+[12.093s]                  from [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23[m[K:
+[12.093s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)[m[K’
+[12.093s]   424 |   [01;36m[Kdeclare_parameter[m[K(
+[12.094s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.094s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:424:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[12.094s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)[m[K’
+[12.095s]   449 |   [01;36m[Kdeclare_parameter[m[K(
+[12.095s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.095s] [01m[K/opt/ros/iron/include/rclcpp/rclcpp/node.hpp:449:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[12.096s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:[m[K In lambda function:
+[12.096s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:163:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krequest_header[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[12.096s]   163 |     [&laser]([01;35m[Kconst std::shared_ptr<rmw_request_id_t> request_header[m[K,
+[12.097s]       |              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[12.097s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:164:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kreq[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[12.098s]   164 |   [01;35m[Kconst std::shared_ptr<std_srvs::srv::Empty::Request> req[m[K,
+[12.098s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[12.098s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:165:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[12.099s]   165 |   [01;35m[Kstd::shared_ptr<std_srvs::srv::Empty::Response> response[m[K) -> bool
+[12.099s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[12.099s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:[m[K In lambda function:
+[12.100s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:173:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krequest_header[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[12.100s]   173 |     [&laser]([01;35m[Kconst std::shared_ptr<rmw_request_id_t> request_header[m[K,
+[12.100s]       |              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[12.101s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:174:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kreq[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[12.101s]   174 |   [01;35m[Kconst std::shared_ptr<std_srvs::srv::Empty::Request> req[m[K,
+[12.102s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[12.102s] [01m[K/home/racecar/racecar_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:175:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[12.102s]   175 |   [01;35m[Kstd::shared_ptr<std_srvs::srv::Empty::Response> response[m[K) -> bool
+[12.103s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[16.481s] gmake[2]: *** [CMakeFiles/ydlidar_ros2_driver_node.dir/build.make:76: CMakeFiles/ydlidar_ros2_driver_node.dir/src/ydlidar_ros2_driver_node.cpp.o] Error 1
+[16.482s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ydlidar_ros2_driver_node.dir/all] Error 2
+[16.483s] gmake: *** [Makefile:146: all] Error 2
+[16.489s] Invoked command in '/home/racecar/racecar_ws/build/ydlidar_ros2_driver' returned '2': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/racecar/racecar_ws/build/ydlidar_ros2_driver -- -j4 -l4

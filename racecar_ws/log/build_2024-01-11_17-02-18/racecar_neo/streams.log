@@ -1,0 +1,22 @@
+[4.085s] Invoking command in '/home/racecar/racecar_ws/build/racecar_neo': PYTHONPATH=/home/racecar/racecar_ws/build/racecar_neo/prefix_override:/home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/racecar/racecar_ws/build/racecar_neo/build --no-deps install_data
+[5.557s] running develop
+[6.666s] running egg_info
+[6.667s] writing racecar_neo.egg-info/PKG-INFO
+[6.668s] writing dependency_links to racecar_neo.egg-info/dependency_links.txt
+[6.669s] writing entry points to racecar_neo.egg-info/entry_points.txt
+[6.670s] writing requirements to racecar_neo.egg-info/requires.txt
+[6.670s] writing top-level names to racecar_neo.egg-info/top_level.txt
+[6.679s] reading manifest file 'racecar_neo.egg-info/SOURCES.txt'
+[6.683s] writing manifest file 'racecar_neo.egg-info/SOURCES.txt'
+[6.689s] running build_ext
+[6.690s] Creating /home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages/racecar-neo.egg-link (link to .)
+[6.693s] Installing camera script to /home/racecar/racecar_ws/install/racecar_neo/lib/racecar_neo
+[6.694s] Installing gamepad script to /home/racecar/racecar_ws/install/racecar_neo/lib/racecar_neo
+[6.694s] Installing imu script to /home/racecar/racecar_ws/install/racecar_neo/lib/racecar_neo
+[6.695s] Installing mux script to /home/racecar/racecar_ws/install/racecar_neo/lib/racecar_neo
+[6.696s] Installing pwm script to /home/racecar/racecar_ws/install/racecar_neo/lib/racecar_neo
+[6.697s] Installing throttle script to /home/racecar/racecar_ws/install/racecar_neo/lib/racecar_neo
+[6.698s] 
+[6.698s] Installed /home/racecar/racecar_ws/build/racecar_neo
+[6.699s] running install_data
+[6.863s] Invoked command in '/home/racecar/racecar_ws/build/racecar_neo' returned '0': PYTHONPATH=/home/racecar/racecar_ws/build/racecar_neo/prefix_override:/home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/racecar/racecar_ws/build/racecar_neo/build --no-deps install_data
