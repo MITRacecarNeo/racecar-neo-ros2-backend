@@ -10,6 +10,7 @@ setup.py
 launch/teleop.launch.py
 racecar_neo/__init__.py
 racecar_neo/camera.py
+racecar_neo/decode_camera.py
 racecar_neo/gamepad.py
 racecar_neo/imu.py
 racecar_neo/maestro.py

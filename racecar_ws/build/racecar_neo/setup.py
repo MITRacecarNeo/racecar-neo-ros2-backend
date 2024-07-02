@@ -19,6 +19,7 @@ setup(
             'throttle = racecar_neo.throttle:main',
             'pwm = racecar_neo.pwm:main',
             'camera = racecar_neo.camera:main',
+            'decode_camera = racecar_neo.decode_camera:main',
             'imu = racecar_neo.imu:main',
         ]
     },

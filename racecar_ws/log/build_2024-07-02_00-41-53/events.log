@@ -1,0 +1,486 @@
+[0.000000] (-) TimerEvent: {}
+[0.002647] (-) JobUnselected: {'identifier': 'ydlidar_ros2_driver'}
+[0.031484] (racecar_neo) JobQueued: {'identifier': 'racecar_neo', 'dependencies': OrderedDict()}
+[0.032374] (racecar_neo) JobStarted: {'identifier': 'racecar_neo'}
+[0.099704] (-) TimerEvent: {}
+[0.212323] (-) TimerEvent: {}
+[0.314337] (-) TimerEvent: {}
+[0.416078] (-) TimerEvent: {}
+[0.519685] (-) TimerEvent: {}
+[0.621712] (-) TimerEvent: {}
+[0.727025] (-) TimerEvent: {}
+[0.848110] (-) TimerEvent: {}
+[0.967573] (-) TimerEvent: {}
+[1.074114] (-) TimerEvent: {}
+[1.175879] (-) TimerEvent: {}
+[1.287413] (-) TimerEvent: {}
+[1.410418] (-) TimerEvent: {}
+[1.511885] (-) TimerEvent: {}
+[1.628789] (-) TimerEvent: {}
+[1.735246] (-) TimerEvent: {}
+[1.836401] (-) TimerEvent: {}
+[1.937727] (-) TimerEvent: {}
+[2.085950] (-) TimerEvent: {}
+[2.225780] (-) TimerEvent: {}
+[2.344604] (-) TimerEvent: {}
+[2.445597] (-) TimerEvent: {}
+[2.547361] (-) TimerEvent: {}
+[2.684576] (-) TimerEvent: {}
+[2.785792] (-) TimerEvent: {}
+[2.889896] (-) TimerEvent: {}
+[2.991814] (-) TimerEvent: {}
+[3.094600] (-) TimerEvent: {}
+[3.199659] (-) TimerEvent: {}
+[3.302503] (-) TimerEvent: {}
+[3.404551] (-) TimerEvent: {}
+[3.506208] (-) TimerEvent: {}
+[3.608413] (-) TimerEvent: {}
+[3.714619] (-) TimerEvent: {}
+[3.815635] (-) TimerEvent: {}
+[3.917086] (-) TimerEvent: {}
+[4.018743] (-) TimerEvent: {}
+[4.120164] (-) TimerEvent: {}
+[4.228215] (-) TimerEvent: {}
+[4.335058] (-) TimerEvent: {}
+[4.454219] (-) TimerEvent: {}
+[4.555519] (-) TimerEvent: {}
+[4.657895] (-) TimerEvent: {}
+[4.759263] (-) TimerEvent: {}
+[4.863464] (-) TimerEvent: {}
+[4.965030] (-) TimerEvent: {}
+[5.070764] (-) TimerEvent: {}
+[5.171895] (-) TimerEvent: {}
+[5.273613] (-) TimerEvent: {}
+[5.393675] (-) TimerEvent: {}
+[5.496342] (-) TimerEvent: {}
+[5.597190] (-) TimerEvent: {}
+[5.698161] (-) TimerEvent: {}
+[5.799787] (-) TimerEvent: {}
+[5.902155] (-) TimerEvent: {}
+[6.003727] (-) TimerEvent: {}
+[6.105485] (-) TimerEvent: {}
+[6.206872] (-) TimerEvent: {}
+[6.308282] (-) TimerEvent: {}
+[6.410174] (-) TimerEvent: {}
+[6.517021] (-) TimerEvent: {}
+[6.618732] (-) TimerEvent: {}
+[6.720267] (-) TimerEvent: {}
+[6.821844] (-) TimerEvent: {}
+[6.923452] (-) TimerEvent: {}
+[7.025031] (-) TimerEvent: {}
+[7.126945] (-) TimerEvent: {}
+[7.228425] (-) TimerEvent: {}
+[7.330106] (-) TimerEvent: {}
+[7.431792] (-) TimerEvent: {}
+[7.533592] (-) TimerEvent: {}
+[7.634473] (-) TimerEvent: {}
+[7.735358] (-) TimerEvent: {}
+[7.836325] (-) TimerEvent: {}
+[7.937330] (-) TimerEvent: {}
+[8.038188] (-) TimerEvent: {}
+[8.140363] (-) TimerEvent: {}
+[8.242510] (-) TimerEvent: {}
+[8.345524] (-) TimerEvent: {}
+[8.447793] (-) TimerEvent: {}
+[8.550102] (-) TimerEvent: {}
+[8.656158] (-) TimerEvent: {}
+[8.771560] (-) TimerEvent: {}
+[8.873383] (-) TimerEvent: {}
+[8.974834] (-) TimerEvent: {}
+[9.076228] (-) TimerEvent: {}
+[9.177904] (-) TimerEvent: {}
+[9.279477] (-) TimerEvent: {}
+[9.387719] (-) TimerEvent: {}
+[9.500730] (-) TimerEvent: {}
+[9.602312] (-) TimerEvent: {}
+[9.704658] (-) TimerEvent: {}
+[9.812263] (-) TimerEvent: {}
+[9.916255] (-) TimerEvent: {}
+[10.018798] (-) TimerEvent: {}
+[10.120839] (-) TimerEvent: {}
+[10.224569] (-) TimerEvent: {}
+[10.332992] (-) TimerEvent: {}
+[10.435937] (-) TimerEvent: {}
+[10.537664] (-) TimerEvent: {}
+[10.639665] (-) TimerEvent: {}
+[10.741994] (-) TimerEvent: {}
+[10.843684] (-) TimerEvent: {}
+[10.945253] (-) TimerEvent: {}
+[11.046913] (-) TimerEvent: {}
+[11.148665] (-) TimerEvent: {}
+[11.250231] (-) TimerEvent: {}
+[11.351624] (-) TimerEvent: {}
+[11.454017] (-) TimerEvent: {}
+[11.555815] (-) TimerEvent: {}
+[11.657606] (-) TimerEvent: {}
+[11.759499] (-) TimerEvent: {}
+[11.861818] (-) TimerEvent: {}
+[11.966982] (-) TimerEvent: {}
+[12.075235] (-) TimerEvent: {}
+[12.177379] (-) TimerEvent: {}
+[12.279151] (-) TimerEvent: {}
+[12.380374] (-) TimerEvent: {}
+[12.481599] (-) TimerEvent: {}
+[12.582480] (-) TimerEvent: {}
+[12.683299] (-) TimerEvent: {}
+[12.784431] (-) TimerEvent: {}
+[12.885971] (-) TimerEvent: {}
+[12.987539] (-) TimerEvent: {}
+[13.088864] (-) TimerEvent: {}
+[13.192913] (-) TimerEvent: {}
+[13.295037] (-) TimerEvent: {}
+[13.400016] (-) TimerEvent: {}
+[13.505015] (-) TimerEvent: {}
+[13.607391] (-) TimerEvent: {}
+[13.710699] (-) TimerEvent: {}
+[13.812519] (-) TimerEvent: {}
+[13.914086] (-) TimerEvent: {}
+[14.017751] (-) TimerEvent: {}
+[14.118556] (-) TimerEvent: {}
+[14.221471] (-) TimerEvent: {}
+[14.322396] (-) TimerEvent: {}
+[14.424689] (-) TimerEvent: {}
+[14.529776] (-) TimerEvent: {}
+[14.638323] (-) TimerEvent: {}
+[14.739166] (-) TimerEvent: {}
+[14.840796] (-) TimerEvent: {}
+[14.942875] (-) TimerEvent: {}
+[15.044868] (-) TimerEvent: {}
+[15.146594] (-) TimerEvent: {}
+[15.262861] (-) TimerEvent: {}
+[15.370515] (-) TimerEvent: {}
+[15.473035] (-) TimerEvent: {}
+[15.574327] (-) TimerEvent: {}
+[15.721800] (-) TimerEvent: {}
+[15.825489] (-) TimerEvent: {}
+[15.928013] (-) TimerEvent: {}
+[16.029853] (-) TimerEvent: {}
+[16.131848] (-) TimerEvent: {}
+[16.233559] (-) TimerEvent: {}
+[16.340989] (-) TimerEvent: {}
+[16.453018] (-) TimerEvent: {}
+[16.554707] (-) TimerEvent: {}
+[16.655820] (-) TimerEvent: {}
+[16.757508] (-) TimerEvent: {}
+[16.859339] (-) TimerEvent: {}
+[16.960408] (-) TimerEvent: {}
+[17.061337] (-) TimerEvent: {}
+[17.163666] (-) TimerEvent: {}
+[17.274587] (-) TimerEvent: {}
+[17.377378] (-) TimerEvent: {}
+[17.484192] (-) TimerEvent: {}
+[17.589931] (-) TimerEvent: {}
+[17.691788] (-) TimerEvent: {}
+[17.793292] (-) TimerEvent: {}
+[17.900478] (-) TimerEvent: {}
+[18.008362] (-) TimerEvent: {}
+[18.110008] (-) TimerEvent: {}
+[18.211900] (-) TimerEvent: {}
+[18.313668] (-) TimerEvent: {}
+[18.415491] (-) TimerEvent: {}
+[18.519791] (-) TimerEvent: {}
+[18.621293] (-) TimerEvent: {}
+[18.722827] (-) TimerEvent: {}
+[18.824326] (-) TimerEvent: {}
+[18.925994] (-) TimerEvent: {}
+[19.027637] (-) TimerEvent: {}
+[19.129389] (-) TimerEvent: {}
+[19.231128] (-) TimerEvent: {}
+[19.332674] (-) TimerEvent: {}
+[19.434496] (-) TimerEvent: {}
+[19.545742] (-) TimerEvent: {}
+[19.653640] (-) TimerEvent: {}
+[19.754813] (-) TimerEvent: {}
+[19.856454] (-) TimerEvent: {}
+[19.957669] (-) TimerEvent: {}
+[20.058708] (-) TimerEvent: {}
+[20.159658] (-) TimerEvent: {}
+[20.260977] (-) TimerEvent: {}
+[20.361997] (-) TimerEvent: {}
+[20.463255] (-) TimerEvent: {}
+[20.564292] (-) TimerEvent: {}
+[20.665645] (-) TimerEvent: {}
+[20.766652] (-) TimerEvent: {}
+[20.867670] (-) TimerEvent: {}
+[20.968494] (-) TimerEvent: {}
+[21.069582] (-) TimerEvent: {}
+[21.170342] (-) TimerEvent: {}
+[21.273107] (-) TimerEvent: {}
+[21.374121] (-) TimerEvent: {}
+[21.475260] (-) TimerEvent: {}
+[21.576054] (-) TimerEvent: {}
+[21.677136] (-) TimerEvent: {}
+[21.778223] (-) TimerEvent: {}
+[21.879118] (-) TimerEvent: {}
+[21.980042] (-) TimerEvent: {}
+[22.080970] (-) TimerEvent: {}
+[22.182002] (-) TimerEvent: {}
+[22.283043] (-) TimerEvent: {}
+[22.383999] (-) TimerEvent: {}
+[22.484880] (-) TimerEvent: {}
+[22.586079] (-) TimerEvent: {}
+[22.687189] (-) TimerEvent: {}
+[22.788255] (-) TimerEvent: {}
+[22.889411] (-) TimerEvent: {}
+[22.990318] (-) TimerEvent: {}
+[23.091244] (-) TimerEvent: {}
+[23.192338] (-) TimerEvent: {}
+[23.293565] (-) TimerEvent: {}
+[23.396185] (-) TimerEvent: {}
+[23.497174] (-) TimerEvent: {}
+[23.598194] (-) TimerEvent: {}
+[23.699078] (-) TimerEvent: {}
+[23.800269] (-) TimerEvent: {}
+[23.901634] (-) TimerEvent: {}
+[24.002684] (-) TimerEvent: {}
+[24.103833] (-) TimerEvent: {}
+[24.204871] (-) TimerEvent: {}
+[24.306317] (-) TimerEvent: {}
+[24.407368] (-) TimerEvent: {}
+[24.508259] (-) TimerEvent: {}
+[24.609301] (-) TimerEvent: {}
+[24.710598] (-) TimerEvent: {}
+[24.811744] (-) TimerEvent: {}
+[24.912792] (-) TimerEvent: {}
+[25.013970] (-) TimerEvent: {}
+[25.115016] (-) TimerEvent: {}
+[25.216043] (-) TimerEvent: {}
+[25.316980] (-) TimerEvent: {}
+[25.418698] (-) TimerEvent: {}
+[25.519521] (-) TimerEvent: {}
+[25.620345] (-) TimerEvent: {}
+[25.721150] (-) TimerEvent: {}
+[25.822905] (-) TimerEvent: {}
+[25.923893] (-) TimerEvent: {}
+[26.024665] (-) TimerEvent: {}
+[26.125869] (-) TimerEvent: {}
+[26.226799] (-) TimerEvent: {}
+[26.327792] (-) TimerEvent: {}
+[26.428690] (-) TimerEvent: {}
+[26.529970] (-) TimerEvent: {}
+[26.645826] (racecar_neo) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--uninstall', '--editable', '--build-directory', '/home/racecar/racecar_ws/build/racecar_neo/build'], 'cwd': '/home/racecar/racecar_ws/build/racecar_neo', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'racecar', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib', 'HOME': '/home/racecar', 'OLDPWD': '/home/racecar/racecar_ws/install', 'DESKTOP_SESSION': 'ubuntu', 'PYENV_SHELL': 'bash', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2278', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/racecar/racecar_ws/install', 'ROS_DISTRO': 'iron', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'racecar', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'racecar', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/home/racecar/.pyenv/shims:/home/racecar/.pyenv/bin:/opt/ros/iron/bin:/home/racecar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/racecar-neo:@/tmp/.ICE-unix/1579,unix/racecar-neo:/tmp/.ICE-unix/1579', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/4902c7bd_ab6a_4075_9ca3_27ead5cea7dd', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.89', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/racecar/racecar_ws/install/ydlidar_ros2_driver:/home/racecar/racecar_ws/install/racecar_neo:/opt/ros/iron', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/racecar/racecar_ws/build/racecar_neo', 'QT_QPA_PLATFORM': 'xcb', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'PYENV_ROOT': '/home/racecar/.pyenv', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/racecar/racecar_ws/build/racecar_neo/prefix_override:/home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages:/usr/local/lib:/usr/local/lib/python3.10/pyrealsense2:/home/racecar/racecar_ws/build/racecar_neo:/home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages:/home/librealsense:/usr/local/lib', 'COLCON': '1', 'VTE_VERSION': '6800', 'EDITOR': 'vim', 'CMAKE_PREFIX_PATH': '/home/racecar/racecar_ws/install/ydlidar_ros2_driver'}, 'shell': False}
+[26.649139] (-) TimerEvent: {}
+[26.750074] (-) TimerEvent: {}
+[26.851142] (-) TimerEvent: {}
+[26.953165] (-) TimerEvent: {}
+[27.054547] (-) TimerEvent: {}
+[27.155917] (-) TimerEvent: {}
+[27.268930] (-) TimerEvent: {}
+[27.383164] (-) TimerEvent: {}
+[27.484786] (-) TimerEvent: {}
+[27.585618] (-) TimerEvent: {}
+[27.687642] (-) TimerEvent: {}
+[27.789256] (-) TimerEvent: {}
+[27.891377] (-) TimerEvent: {}
+[27.999111] (-) TimerEvent: {}
+[28.101255] (-) TimerEvent: {}
+[28.204506] (-) TimerEvent: {}
+[28.309073] (-) TimerEvent: {}
+[28.411040] (-) TimerEvent: {}
+[28.512540] (-) TimerEvent: {}
+[28.613425] (-) TimerEvent: {}
+[28.714239] (-) TimerEvent: {}
+[28.815562] (-) TimerEvent: {}
+[28.917085] (-) TimerEvent: {}
+[29.018779] (-) TimerEvent: {}
+[29.120430] (-) TimerEvent: {}
+[29.222853] (-) TimerEvent: {}
+[29.324509] (-) TimerEvent: {}
+[29.425914] (-) TimerEvent: {}
+[29.527561] (-) TimerEvent: {}
+[29.628915] (-) TimerEvent: {}
+[29.730420] (-) TimerEvent: {}
+[29.832042] (-) TimerEvent: {}
+[29.933657] (-) TimerEvent: {}
+[30.034499] (-) TimerEvent: {}
+[30.137785] (-) TimerEvent: {}
+[30.239342] (-) TimerEvent: {}
+[30.346394] (-) TimerEvent: {}
+[30.448055] (-) TimerEvent: {}
+[30.549681] (-) TimerEvent: {}
+[30.651250] (-) TimerEvent: {}
+[30.752893] (-) TimerEvent: {}
+[30.854687] (-) TimerEvent: {}
+[30.956322] (-) TimerEvent: {}
+[31.057173] (-) TimerEvent: {}
+[31.158157] (-) TimerEvent: {}
+[31.259090] (-) TimerEvent: {}
+[31.360074] (-) TimerEvent: {}
+[31.461030] (-) TimerEvent: {}
+[31.562173] (-) TimerEvent: {}
+[31.663548] (-) TimerEvent: {}
+[31.764418] (-) TimerEvent: {}
+[31.865347] (-) TimerEvent: {}
+[31.967064] (-) TimerEvent: {}
+[32.069425] (-) TimerEvent: {}
+[32.172928] (-) TimerEvent: {}
+[32.274354] (-) TimerEvent: {}
+[32.376415] (-) TimerEvent: {}
+[32.478920] (-) TimerEvent: {}
+[32.580540] (-) TimerEvent: {}
+[32.682797] (-) TimerEvent: {}
+[32.785075] (-) TimerEvent: {}
+[32.886702] (-) TimerEvent: {}
+[32.988167] (-) TimerEvent: {}
+[33.089529] (-) TimerEvent: {}
+[33.191079] (-) TimerEvent: {}
+[33.292593] (-) TimerEvent: {}
+[33.394258] (-) TimerEvent: {}
+[33.498069] (-) TimerEvent: {}
+[33.600937] (-) TimerEvent: {}
+[33.704312] (-) TimerEvent: {}
+[33.810555] (-) TimerEvent: {}
+[33.912881] (-) TimerEvent: {}
+[34.014465] (-) TimerEvent: {}
+[34.116225] (-) TimerEvent: {}
+[34.224143] (-) TimerEvent: {}
+[34.325532] (-) TimerEvent: {}
+[34.427024] (-) TimerEvent: {}
+[34.528634] (-) TimerEvent: {}
+[34.630181] (-) TimerEvent: {}
+[34.731190] (-) TimerEvent: {}
+[34.833134] (-) TimerEvent: {}
+[34.934139] (-) TimerEvent: {}
+[35.035107] (-) TimerEvent: {}
+[35.126720] (racecar_neo) StdoutLine: {'line': b'running develop\n'}
+[35.135479] (-) TimerEvent: {}
+[35.236297] (-) TimerEvent: {}
+[35.337214] (-) TimerEvent: {}
+[35.438142] (-) TimerEvent: {}
+[35.539126] (-) TimerEvent: {}
+[35.640519] (-) TimerEvent: {}
+[35.742334] (-) TimerEvent: {}
+[35.843873] (-) TimerEvent: {}
+[35.945666] (-) TimerEvent: {}
+[36.047699] (-) TimerEvent: {}
+[36.150831] (-) TimerEvent: {}
+[36.256907] (-) TimerEvent: {}
+[36.362132] (-) TimerEvent: {}
+[36.473904] (-) TimerEvent: {}
+[36.576370] (-) TimerEvent: {}
+[36.694739] (-) TimerEvent: {}
+[36.796018] (-) TimerEvent: {}
+[36.896935] (-) TimerEvent: {}
+[36.998411] (-) TimerEvent: {}
+[37.100033] (-) TimerEvent: {}
+[37.201626] (-) TimerEvent: {}
+[37.303239] (-) TimerEvent: {}
+[37.404250] (-) TimerEvent: {}
+[37.505800] (-) TimerEvent: {}
+[37.607685] (-) TimerEvent: {}
+[37.709051] (-) TimerEvent: {}
+[37.810609] (-) TimerEvent: {}
+[37.912367] (-) TimerEvent: {}
+[37.921231] (racecar_neo) StdoutLine: {'line': b'Removing /home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages/racecar-neo.egg-link (link to .)\n'}
+[38.012891] (-) TimerEvent: {}
+[38.114464] (-) TimerEvent: {}
+[38.217722] (racecar_neo) CommandEnded: {'returncode': 0}
+[38.219503] (-) TimerEvent: {}
+[38.220315] (racecar_neo) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/racecar_neo', 'build', '--build-base', '/home/racecar/racecar_ws/build/racecar_neo/build', 'install', '--record', '/home/racecar/racecar_ws/build/racecar_neo/install.log', '--single-version-externally-managed'], 'cwd': '/home/racecar/racecar_ws/src/racecar_neo', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'racecar', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib', 'HOME': '/home/racecar', 'OLDPWD': '/home/racecar/racecar_ws/install', 'DESKTOP_SESSION': 'ubuntu', 'PYENV_SHELL': 'bash', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2278', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/racecar/racecar_ws/install', 'ROS_DISTRO': 'iron', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'racecar', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'racecar', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/home/racecar/.pyenv/shims:/home/racecar/.pyenv/bin:/opt/ros/iron/bin:/home/racecar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/racecar-neo:@/tmp/.ICE-unix/1579,unix/racecar-neo:/tmp/.ICE-unix/1579', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/4902c7bd_ab6a_4075_9ca3_27ead5cea7dd', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.89', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/racecar/racecar_ws/install/ydlidar_ros2_driver:/home/racecar/racecar_ws/install/racecar_neo:/opt/ros/iron', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/racecar/racecar_ws/build/racecar_neo', 'QT_QPA_PLATFORM': 'xcb', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'PYENV_ROOT': '/home/racecar/.pyenv', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/racecar/racecar_ws/build/racecar_neo/prefix_override:/home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages:/usr/local/lib:/usr/local/lib/python3.10/pyrealsense2:/home/racecar/racecar_ws/build/racecar_neo:/home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages:/home/librealsense:/usr/local/lib', 'COLCON': '1', 'VTE_VERSION': '6800', 'EDITOR': 'vim', 'CMAKE_PREFIX_PATH': '/home/racecar/racecar_ws/install/ydlidar_ros2_driver'}, 'shell': False}
+[38.319696] (-) TimerEvent: {}
+[38.420569] (-) TimerEvent: {}
+[38.522281] (-) TimerEvent: {}
+[38.623923] (-) TimerEvent: {}
+[38.728871] (-) TimerEvent: {}
+[38.830295] (-) TimerEvent: {}
+[38.931362] (-) TimerEvent: {}
+[39.037303] (-) TimerEvent: {}
+[39.138238] (-) TimerEvent: {}
+[39.239254] (-) TimerEvent: {}
+[39.340849] (-) TimerEvent: {}
+[39.442328] (-) TimerEvent: {}
+[39.543919] (-) TimerEvent: {}
+[39.645633] (-) TimerEvent: {}
+[39.747181] (-) TimerEvent: {}
+[39.848800] (-) TimerEvent: {}
+[39.950647] (-) TimerEvent: {}
+[40.054484] (-) TimerEvent: {}
+[40.156133] (-) TimerEvent: {}
+[40.257925] (-) TimerEvent: {}
+[40.359663] (-) TimerEvent: {}
+[40.461451] (-) TimerEvent: {}
+[40.564449] (-) TimerEvent: {}
+[40.667965] (-) TimerEvent: {}
+[40.769711] (-) TimerEvent: {}
+[40.871245] (-) TimerEvent: {}
+[40.972968] (-) TimerEvent: {}
+[41.074521] (-) TimerEvent: {}
+[41.176257] (-) TimerEvent: {}
+[41.277862] (-) TimerEvent: {}
+[41.378695] (-) TimerEvent: {}
+[41.479653] (-) TimerEvent: {}
+[41.580623] (-) TimerEvent: {}
+[41.681672] (-) TimerEvent: {}
+[41.782553] (-) TimerEvent: {}
+[41.883416] (-) TimerEvent: {}
+[41.985222] (-) TimerEvent: {}
+[42.088949] (-) TimerEvent: {}
+[42.190300] (-) TimerEvent: {}
+[42.223342] (racecar_neo) StdoutLine: {'line': b'running egg_info\n'}
+[42.228264] (racecar_neo) StdoutLine: {'line': b'writing ../../build/racecar_neo/racecar_neo.egg-info/PKG-INFO\n'}
+[42.232103] (racecar_neo) StdoutLine: {'line': b'writing dependency_links to ../../build/racecar_neo/racecar_neo.egg-info/dependency_links.txt\n'}
+[42.235934] (racecar_neo) StdoutLine: {'line': b'writing entry points to ../../build/racecar_neo/racecar_neo.egg-info/entry_points.txt\n'}
+[42.236796] (racecar_neo) StdoutLine: {'line': b'writing requirements to ../../build/racecar_neo/racecar_neo.egg-info/requires.txt\n'}
+[42.248535] (racecar_neo) StdoutLine: {'line': b'writing top-level names to ../../build/racecar_neo/racecar_neo.egg-info/top_level.txt\n'}
+[42.257053] (racecar_neo) StdoutLine: {'line': b"reading manifest file '../../build/racecar_neo/racecar_neo.egg-info/SOURCES.txt'\n"}
+[42.259381] (racecar_neo) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[42.263988] (racecar_neo) StdoutLine: {'line': b"writing manifest file '../../build/racecar_neo/racecar_neo.egg-info/SOURCES.txt'\n"}
+[42.265187] (racecar_neo) StdoutLine: {'line': b'running build\n'}
+[42.266374] (racecar_neo) StdoutLine: {'line': b'running build_py\n'}
+[42.270183] (racecar_neo) StdoutLine: {'line': b'running install\n'}
+[42.271909] (racecar_neo) StdoutLine: {'line': b'running install_lib\n'}
+[42.308822] (racecar_neo) StdoutLine: {'line': b'creating /home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages/racecar_neo\n'}
+[42.309568] (-) TimerEvent: {}
+[42.314339] (racecar_neo) StdoutLine: {'line': b'copying /home/racecar/racecar_ws/build/racecar_neo/build/lib/racecar_neo/maestro.py -> /home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages/racecar_neo\n'}
+[42.315391] (racecar_neo) StdoutLine: {'line': b'copying /home/racecar/racecar_ws/build/racecar_neo/build/lib/racecar_neo/camera.py -> /home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages/racecar_neo\n'}
+[42.316469] (racecar_neo) StdoutLine: {'line': b'copying /home/racecar/racecar_ws/build/racecar_neo/build/lib/racecar_neo/imu.py -> /home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages/racecar_neo\n'}
+[42.317442] (racecar_neo) StdoutLine: {'line': b'copying /home/racecar/racecar_ws/build/racecar_neo/build/lib/racecar_neo/gamepad.py -> /home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages/racecar_neo\n'}
+[42.318072] (racecar_neo) StdoutLine: {'line': b'copying /home/racecar/racecar_ws/build/racecar_neo/build/lib/racecar_neo/mux.py -> /home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages/racecar_neo\n'}
+[42.318576] (racecar_neo) StdoutLine: {'line': b'copying /home/racecar/racecar_ws/build/racecar_neo/build/lib/racecar_neo/decode_camera.py -> /home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages/racecar_neo\n'}
+[42.319421] (racecar_neo) StdoutLine: {'line': b'copying /home/racecar/racecar_ws/build/racecar_neo/build/lib/racecar_neo/__init__.py -> /home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages/racecar_neo\n'}
+[42.320145] (racecar_neo) StdoutLine: {'line': b'copying /home/racecar/racecar_ws/build/racecar_neo/build/lib/racecar_neo/throttle.py -> /home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages/racecar_neo\n'}
+[42.325937] (racecar_neo) StdoutLine: {'line': b'copying /home/racecar/racecar_ws/build/racecar_neo/build/lib/racecar_neo/pwm.py -> /home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages/racecar_neo\n'}
+[42.327075] (racecar_neo) StdoutLine: {'line': b'byte-compiling /home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages/racecar_neo/maestro.py to maestro.cpython-310.pyc\n'}
+[42.327912] (racecar_neo) StdoutLine: {'line': b'byte-compiling /home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages/racecar_neo/camera.py to camera.cpython-310.pyc\n'}
+[42.328925] (racecar_neo) StdoutLine: {'line': b'byte-compiling /home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages/racecar_neo/imu.py to imu.cpython-310.pyc\n'}
+[42.329882] (racecar_neo) StdoutLine: {'line': b'byte-compiling /home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages/racecar_neo/gamepad.py to gamepad.cpython-310.pyc\n'}
+[42.330492] (racecar_neo) StdoutLine: {'line': b'byte-compiling /home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages/racecar_neo/mux.py to mux.cpython-310.pyc\n'}
+[42.331119] (racecar_neo) StdoutLine: {'line': b'byte-compiling /home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages/racecar_neo/decode_camera.py to decode_camera.cpython-310.pyc\n'}
+[42.331758] (racecar_neo) StdoutLine: {'line': b'byte-compiling /home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages/racecar_neo/__init__.py to __init__.cpython-310.pyc\n'}
+[42.332343] (racecar_neo) StdoutLine: {'line': b'byte-compiling /home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages/racecar_neo/throttle.py to throttle.cpython-310.pyc\n'}
+[42.332970] (racecar_neo) StdoutLine: {'line': b'byte-compiling /home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages/racecar_neo/pwm.py to pwm.cpython-310.pyc\n'}
+[42.333384] (racecar_neo) StdoutLine: {'line': b'running install_data\n'}
+[42.334411] (racecar_neo) StdoutLine: {'line': b'running install_egg_info\n'}
+[42.351225] (racecar_neo) StdoutLine: {'line': b'Copying ../../build/racecar_neo/racecar_neo.egg-info to /home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages/racecar_neo-1.0.0-py3.10.egg-info\n'}
+[42.365605] (racecar_neo) StdoutLine: {'line': b'running install_scripts\n'}
+[42.416301] (-) TimerEvent: {}
+[42.484065] (racecar_neo) StdoutLine: {'line': b'Installing camera script to /home/racecar/racecar_ws/install/racecar_neo/lib/racecar_neo\n'}
+[42.485649] (racecar_neo) StdoutLine: {'line': b'Installing decode_camera = racecar_neo.decode_camera:mainimu script to /home/racecar/racecar_ws/install/racecar_neo/lib/racecar_neo\n'}
+[42.487279] (racecar_neo) StdoutLine: {'line': b'Installing gamepad script to /home/racecar/racecar_ws/install/racecar_neo/lib/racecar_neo\n'}
+[42.492943] (racecar_neo) StdoutLine: {'line': b'Installing mux script to /home/racecar/racecar_ws/install/racecar_neo/lib/racecar_neo\n'}
+[42.498340] (racecar_neo) StdoutLine: {'line': b'Installing pwm script to /home/racecar/racecar_ws/install/racecar_neo/lib/racecar_neo\n'}
+[42.509041] (racecar_neo) StdoutLine: {'line': b'Installing throttle script to /home/racecar/racecar_ws/install/racecar_neo/lib/racecar_neo\n'}
+[42.511267] (racecar_neo) StdoutLine: {'line': b"writing list of installed files to '/home/racecar/racecar_ws/build/racecar_neo/install.log'\n"}
+[42.536940] (-) TimerEvent: {}
+[42.652587] (-) TimerEvent: {}
+[42.729596] (racecar_neo) CommandEnded: {'returncode': 0}
+[42.770592] (-) TimerEvent: {}
+[42.873055] (-) TimerEvent: {}
+[42.974438] (-) TimerEvent: {}
+[43.076494] (-) TimerEvent: {}
+[43.194327] (-) TimerEvent: {}
+[43.302208] (-) TimerEvent: {}
+[43.403717] (-) TimerEvent: {}
+[43.505735] (-) TimerEvent: {}
+[43.607752] (-) TimerEvent: {}
+[43.756122] (-) TimerEvent: {}
+[43.874416] (-) TimerEvent: {}
+[43.976922] (-) TimerEvent: {}
+[44.078754] (-) TimerEvent: {}
+[44.183282] (-) TimerEvent: {}
+[44.310948] (-) TimerEvent: {}
+[44.412888] (-) TimerEvent: {}
+[44.514628] (-) TimerEvent: {}
+[44.606016] (racecar_neo) JobEnded: {'identifier': 'racecar_neo', 'rc': 0}
+[44.614919] (-) TimerEvent: {}
+[44.617149] (-) EventReactorShutdown: {}

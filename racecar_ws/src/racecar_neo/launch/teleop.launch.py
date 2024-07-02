@@ -38,6 +38,11 @@ def generate_launch_description():
         executable='camera',
         name='camera_node'
 	),
+	Node (
+		package='racecar_neo',
+		executable='decode_camera',
+		name='image_decoder'
+	),
     Node(
 	    package='racecar_neo',
         executable='imu',

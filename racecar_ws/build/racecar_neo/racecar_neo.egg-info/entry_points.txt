@@ -1,5 +1,6 @@
 [console_scripts]
 camera = racecar_neo.camera:main
+decode_camera = racecar_neo.decode_camera:main
 gamepad = racecar_neo.gamepad:main
 imu = racecar_neo.imu:main
 mux = racecar_neo.mux:main

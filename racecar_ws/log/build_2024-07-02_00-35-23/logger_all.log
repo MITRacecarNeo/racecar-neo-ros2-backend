@@ -1,0 +1,151 @@
+[58.360s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install', '--packages-select', 'racecar_neo']
+[58.362s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['racecar_neo'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff8a334880>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff8a3362f0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff8a3362f0>>)
+[64.296s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[64.297s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[64.298s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[64.298s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[64.298s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[64.299s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[64.300s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/racecar/racecar_ws'
+[64.301s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[64.303s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[64.304s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[64.305s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[64.305s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[64.306s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[64.324s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[64.325s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[64.326s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[64.664s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[64.665s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[64.666s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[64.667s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[64.668s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[64.805s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[64.806s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[64.806s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[64.807s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[64.808s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[64.878s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[64.880s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[64.881s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[64.882s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[64.883s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[64.883s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[64.884s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[64.884s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[64.884s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[64.885s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[64.885s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[64.885s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[64.902s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[64.903s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[64.904s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[64.905s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[64.905s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[64.908s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[64.910s] Level 1:colcon.colcon_core.package_identification:_identify(src/racecar_neo) by extensions ['ignore', 'ignore_ament_install']
+[64.911s] Level 1:colcon.colcon_core.package_identification:_identify(src/racecar_neo) by extension 'ignore'
+[64.911s] Level 1:colcon.colcon_core.package_identification:_identify(src/racecar_neo) by extension 'ignore_ament_install'
+[64.912s] Level 1:colcon.colcon_core.package_identification:_identify(src/racecar_neo) by extensions ['colcon_pkg']
+[64.913s] Level 1:colcon.colcon_core.package_identification:_identify(src/racecar_neo) by extension 'colcon_pkg'
+[64.913s] Level 1:colcon.colcon_core.package_identification:_identify(src/racecar_neo) by extensions ['colcon_meta']
+[64.914s] Level 1:colcon.colcon_core.package_identification:_identify(src/racecar_neo) by extension 'colcon_meta'
+[64.915s] Level 1:colcon.colcon_core.package_identification:_identify(src/racecar_neo) by extensions ['ros']
+[64.915s] Level 1:colcon.colcon_core.package_identification:_identify(src/racecar_neo) by extension 'ros'
+[65.087s] DEBUG:colcon.colcon_core.package_identification:Package 'src/racecar_neo' with type 'ros.ament_python' and name 'racecar_neo'
+[65.088s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar) by extensions ['ignore', 'ignore_ament_install']
+[65.089s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar) by extension 'ignore'
+[65.090s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar) by extension 'ignore_ament_install'
+[65.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar) by extensions ['colcon_pkg']
+[65.091s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar) by extension 'colcon_pkg'
+[65.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar) by extensions ['colcon_meta']
+[65.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar) by extension 'colcon_meta'
+[65.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar) by extensions ['ros']
+[65.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/ydlidar) by extension 'ros'
+[65.190s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ydlidar' with type 'ros.ament_cmake' and name 'ydlidar_ros2_driver'
+[65.191s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[65.191s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[65.192s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[65.192s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[65.192s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[69.775s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ydlidar_ros2_driver' in 'src/ydlidar'
+[73.798s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[73.799s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[77.311s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/racecar/racecar_ws/install
+[78.075s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 282 installed packages in /opt/ros/iron
+[78.086s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[83.805s] Level 5:colcon.colcon_core.verb:set package 'racecar_neo' build argument 'cmake_args' from command line to 'None'
+[83.806s] Level 5:colcon.colcon_core.verb:set package 'racecar_neo' build argument 'cmake_target' from command line to 'None'
+[83.806s] Level 5:colcon.colcon_core.verb:set package 'racecar_neo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[83.806s] Level 5:colcon.colcon_core.verb:set package 'racecar_neo' build argument 'cmake_clean_cache' from command line to 'False'
+[83.806s] Level 5:colcon.colcon_core.verb:set package 'racecar_neo' build argument 'cmake_clean_first' from command line to 'False'
+[83.807s] Level 5:colcon.colcon_core.verb:set package 'racecar_neo' build argument 'cmake_force_configure' from command line to 'False'
+[83.807s] Level 5:colcon.colcon_core.verb:set package 'racecar_neo' build argument 'ament_cmake_args' from command line to 'None'
+[83.809s] Level 5:colcon.colcon_core.verb:set package 'racecar_neo' build argument 'catkin_cmake_args' from command line to 'None'
+[83.809s] Level 5:colcon.colcon_core.verb:set package 'racecar_neo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[83.810s] DEBUG:colcon.colcon_core.verb:Building package 'racecar_neo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/racecar/racecar_ws/build/racecar_neo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/racecar/racecar_ws/install/racecar_neo', 'merge_install': False, 'path': '/home/racecar/racecar_ws/src/racecar_neo', 'symlink_install': True, 'test_result_base': None}
+[84.112s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[85.666s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[85.667s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/racecar/racecar_ws/src/racecar_neo' with build type 'ament_python'
+[85.668s] Level 1:colcon.colcon_core.shell:create_environment_hook('racecar_neo', 'ament_prefix_path')
+[88.455s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[88.464s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/racecar/racecar_ws/install/racecar_neo/share/racecar_neo/hook/ament_prefix_path.ps1'
+[88.552s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/racecar/racecar_ws/install/racecar_neo/share/racecar_neo/hook/ament_prefix_path.dsv'
+[88.681s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/racecar/racecar_ws/install/racecar_neo/share/racecar_neo/hook/ament_prefix_path.sh'
+[90.939s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[90.940s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[120.119s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/racecar/racecar_ws/src/racecar_neo'
+[120.823s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[120.824s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[138.919s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/racecar/racecar_ws/install/racecar_neo/share/ament_index/resource_index/packages/racecar_neo
+[138.927s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/racecar/racecar_ws/install/racecar_neo/share/racecar_neo/package.xml
+[138.927s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/racecar/racecar_ws/install/racecar_neo/share/racecar_neo/teleop.launch.py
+[138.938s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/racecar/racecar_ws/install/racecar_neo/lib/racecar_neo/camera
+[138.938s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/racecar/racecar_ws/install/racecar_neo/lib/racecar_neo/gamepad
+[138.938s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/racecar/racecar_ws/install/racecar_neo/lib/racecar_neo/imu
+[138.939s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/racecar/racecar_ws/install/racecar_neo/lib/racecar_neo/mux
+[138.939s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/racecar/racecar_ws/install/racecar_neo/lib/racecar_neo/pwm
+[138.939s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/racecar/racecar_ws/install/racecar_neo/lib/racecar_neo/throttle
+[138.946s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/racecar/racecar_ws/build/racecar_neo': PYTHONPATH=/home/racecar/racecar_ws/build/racecar_neo/prefix_override:/home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/racecar/racecar_ws/build/racecar_neo/build --no-deps install_data
+[161.421s] Level 1:colcon.colcon_core.shell:create_environment_hook('racecar_neo', 'pythonpath_develop')
+[161.444s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/racecar/racecar_ws/build/racecar_neo' returned '0': PYTHONPATH=/home/racecar/racecar_ws/build/racecar_neo/prefix_override:/home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/racecar/racecar_ws/build/racecar_neo/build --no-deps install_data
+[161.882s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/racecar/racecar_ws/build/racecar_neo/share/racecar_neo/hook/pythonpath_develop.ps1'
+[161.886s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/racecar/racecar_ws/build/racecar_neo/share/racecar_neo/hook/pythonpath_develop.dsv'
+[161.888s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/racecar/racecar_ws/build/racecar_neo/share/racecar_neo/hook/pythonpath_develop.sh'
+[162.476s] Level 1:colcon.colcon_core.environment:checking '/home/racecar/racecar_ws/install/racecar_neo' for CMake module files
+[162.479s] Level 1:colcon.colcon_core.environment:checking '/home/racecar/racecar_ws/install/racecar_neo' for CMake config files
+[162.519s] Level 1:colcon.colcon_core.environment:checking '/home/racecar/racecar_ws/install/racecar_neo/lib'
+[162.520s] Level 1:colcon.colcon_core.environment:checking '/home/racecar/racecar_ws/install/racecar_neo/bin'
+[162.537s] Level 1:colcon.colcon_core.environment:checking '/home/racecar/racecar_ws/install/racecar_neo/lib/pkgconfig/racecar_neo.pc'
+[162.559s] Level 1:colcon.colcon_core.environment:checking '/home/racecar/racecar_ws/install/racecar_neo/lib/python3.10/site-packages'
+[162.560s] Level 1:colcon.colcon_core.shell:create_environment_hook('racecar_neo', 'pythonpath')
+[163.075s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/racecar/racecar_ws/install/racecar_neo/share/racecar_neo/hook/pythonpath.ps1'
+[163.077s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/racecar/racecar_ws/install/racecar_neo/share/racecar_neo/hook/pythonpath.dsv'
+[163.080s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/racecar/racecar_ws/install/racecar_neo/share/racecar_neo/hook/pythonpath.sh'
+[163.083s] Level 1:colcon.colcon_core.environment:checking '/home/racecar/racecar_ws/install/racecar_neo/bin'
+[163.083s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(racecar_neo)
+[163.641s] INFO:colcon.colcon_core.shell:Creating package script '/home/racecar/racecar_ws/install/racecar_neo/share/racecar_neo/package.ps1'
+[163.646s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/racecar/racecar_ws/install/racecar_neo/share/racecar_neo/package.dsv'
+[163.654s] INFO:colcon.colcon_core.shell:Creating package script '/home/racecar/racecar_ws/install/racecar_neo/share/racecar_neo/package.sh'
+[163.659s] INFO:colcon.colcon_core.shell:Creating package script '/home/racecar/racecar_ws/install/racecar_neo/share/racecar_neo/package.bash'
+[163.663s] INFO:colcon.colcon_core.shell:Creating package script '/home/racecar/racecar_ws/install/racecar_neo/share/racecar_neo/package.zsh'
+[163.682s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/racecar/racecar_ws/install/racecar_neo/share/colcon-core/packages/racecar_neo)
+[163.690s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[163.692s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[163.692s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[163.693s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[164.002s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[164.003s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[164.003s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[164.113s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[164.718s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/racecar/racecar_ws/install/local_setup.ps1'
+[164.731s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/racecar/racecar_ws/install/_local_setup_util_ps1.py'
+[164.738s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/racecar/racecar_ws/install/setup.ps1'
+[165.210s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/racecar/racecar_ws/install/local_setup.sh'
+[165.218s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/racecar/racecar_ws/install/_local_setup_util_sh.py'
+[165.230s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/racecar/racecar_ws/install/setup.sh'
+[165.566s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/racecar/racecar_ws/install/local_setup.bash'
+[165.570s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/racecar/racecar_ws/install/setup.bash'
+[166.002s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/racecar/racecar_ws/install/local_setup.zsh'
+[166.005s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/racecar/racecar_ws/install/setup.zsh'
