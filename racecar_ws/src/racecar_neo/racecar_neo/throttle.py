@@ -13,13 +13,14 @@ from sensor_msgs.msg import Joy
 from ackermann_msgs.msg import AckermannDriveStamped
 
 # get param file values
-CAR_THROTTLE_FORWARD = float(0.04) # rclpy.parameter.Parameter('car_throttle_forward',type_=DOUBLE, 0.25)
-CAR_THROTTLE_BACKWARD = float(0.06) # rclpy.param.Parameter('car_throttle_backward',type_=DOUBLE, 0.25)
-CAR_THROTTLE_TURN = float(0.25) # rclpy.param.Parameter('car_throttle_turn',type_=DOUBLE, 1.0)
+CAR_THROTTLE_FORWARD = float(0.04)  # rclpy.parameter.Parameter('car_throttle_forward',type_=DOUBLE, 0.25)
+CAR_THROTTLE_BACKWARD = float(0.06)  # rclpy.param.Parameter('car_throttle_backward',type_=DOUBLE, 0.25)
+CAR_THROTTLE_TURN = float(0.25)  # rclpy.param.Parameter('car_throttle_turn',type_=DOUBLE, 1.0)
+
+DRIVE_MAX_SPEED = float(0.25)
 
 
 def main(args=None):
-
     # init ROS
     rclpy.init(args=args)
     node = rclpy.create_node('throttle_node')
@@ -32,19 +33,24 @@ def main(args=None):
 
         pub = node.create_publisher(AckermannDriveStamped, '/motor', qos_profile)
 
-        # callback that throttles max speed and angle
+        # callback that throttles / scales max speed and angle
         def drive_callback(msg):
-            if msg.drive.speed > CAR_THROTTLE_FORWARD:
-                msg.drive.speed = CAR_THROTTLE_FORWARD
+            # Messages sent by `/drive` and republished in `/mux_out` have max `drive.speed` of `DRIVE_MAX_SPEED`.
+            # Scale this back up to [-1.0, 1.0], then multiply by throttle to get full range of motion.
+            msg.drive.speed /= DRIVE_MAX_SPEED
+            msg.drive.speed = max(min(msg.drive.speed, 1.0), -1.0)
 
-            if msg.drive.speed < -CAR_THROTTLE_BACKWARD:
-                msg.drive.speed = -CAR_THROTTLE_BACKWARD
+            # Scale by `THROTTLE_FORWARD` on positive speed, `THROTTLE_BACKWARD` on negative speed
+            if msg.drive.speed > 0:
+                msg.drive.speed *= CAR_THROTTLE_FORWARD
 
-            if msg.drive.steering_angle > CAR_THROTTLE_TURN:
-                msg.drive.steering_angle = CAR_THROTTLE_TURN
+            if msg.drive.speed < 0:
+                msg.drive.speed *= CAR_THROTTLE_BACKWARD
 
-            if msg.drive.steering_angle < -CAR_THROTTLE_TURN:
-                msg.drive.steering_angle = -CAR_THROTTLE_TURN
+            # `drive.steering_angle` is already within [-1.0, 1.0], so just multiply by throttle for
+            # full range of motion.
+            msg.drive.steering_angle = max(min(msg.drive.steering_angle, 1.0), -1.0)
+            msg.drive.steering_angle *= CAR_THROTTLE_TURN
 
             pub.publish(msg)
 
