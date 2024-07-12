@@ -1,2 +1,0 @@
-Invoking command in '/home/racecar/racecar_ws/build/ackermann_msgs': /usr/bin/cmake /home/racecar/racecar_ws/src/ackermann_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/racecar/racecar_ws/install/ackermann_msgs
-Invoked command in '/home/racecar/racecar_ws/build/ackermann_msgs' returned '1': /usr/bin/cmake /home/racecar/racecar_ws/src/ackermann_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/racecar/racecar_ws/install/ackermann_msgs

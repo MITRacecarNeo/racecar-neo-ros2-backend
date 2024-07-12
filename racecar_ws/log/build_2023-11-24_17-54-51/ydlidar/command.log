@@ -1,2 +1,0 @@
-Invoking command in '/home/racecar/racecar_ws/build/ydlidar': /usr/bin/cmake /home/racecar/racecar_ws/src/ydlidar -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/racecar/racecar_ws/install/ydlidar
-Invoked command in '/home/racecar/racecar_ws/build/ydlidar' returned '1': /usr/bin/cmake /home/racecar/racecar_ws/src/ydlidar -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/racecar/racecar_ws/install/ydlidar
