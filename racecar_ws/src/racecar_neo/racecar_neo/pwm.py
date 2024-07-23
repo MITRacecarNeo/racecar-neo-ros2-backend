@@ -61,7 +61,7 @@ def main(args=None):
         else:
             lin_vel = map_val(msg.drive.speed, -CAR_MAX_BACKWARD, 0, 3000, 6000)
 
-        turn_angle = map_val(msg.drive.steering_angle, -CAR_MAX_TURN, CAR_MAX_TURN, 8000, 4000)
+        turn_angle = map_val(msg.drive.steering_angle, -CAR_MAX_TURN, CAR_MAX_TURN, 3800, 7000)
 
         # print(f"    << speed:  {lin_vel}")
         # print(f"    << steer:  {turn_angle}")
