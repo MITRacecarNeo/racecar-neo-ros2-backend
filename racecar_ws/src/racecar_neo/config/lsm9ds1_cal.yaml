@@ -1,0 +1,20 @@
+imu_node:
+  ros__parameters:
+    accelerometer.bias:
+    - 0.0
+    - 0.0
+    - 0.0
+    accelerometer.noise_density: 0.00186
+    accelerometer.random_walk: 0.000433
+    calibration_date: '2025-06-29 18:53:36'
+    gyroscope.bias:
+    - 0.0
+    - 0.0
+    - 0.0
+    gyroscope.noise_density: 0.000187
+    gyroscope.random_walk: 2.66e-05
+    imu_model: lsm9ds1
+    ros2_topic: /imu
+    temperature_bias: 0.0
+    temperature_scale: 1.0
+    update_rate: 100.0

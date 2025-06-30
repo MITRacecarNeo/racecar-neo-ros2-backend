@@ -1,12 +1,18 @@
 #!/usr/bin/python3
 
+import os
 import launch
 import launch.actions
 import launch.substitutions
 from launch_ros.actions import Node
-
+from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
+    config = os.path.join(
+            get_package_share_directory('racecar_neo'),
+            'config',
+            'lsm9ds1_cal.yaml')
+
     return launch.LaunchDescription([
 	Node(
 	    package='joy',
@@ -38,6 +44,7 @@ def generate_launch_description():
         executable='camera',
         name='camera_node'
 	),
+    # uncomment decode_camera for rviz-compatible image
 	#Node (
 		#package='racecar_neo',
 		#executable='decode_camera',
@@ -46,8 +53,9 @@ def generate_launch_description():
     Node(
 	    package='racecar_neo',
         executable='imu',
-        name='imu_node'
-	),
+        name='imu_node',
+	    parameters=[config],
+    ),
 	Node(
             package='sllidar_ros2',
             executable='sllidar_node',
