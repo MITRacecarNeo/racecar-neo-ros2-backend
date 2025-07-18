@@ -10,6 +10,7 @@ import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Imu, MagneticField
 from std_msgs.msg import Header
+import numpy as np
 
 def main(args=None):
 
@@ -32,156 +33,103 @@ def main(args=None):
     # --- ACCEL/GYRO REGISTER ADDRESSES ---
     CTRL_REG1_G = 0x10
     CTRL_REG6_XL = 0x20
-    
-    OUT_X_L_G = 0x18
-    OUT_X_H_G = 0x19
-    OUT_Y_L_G = 0x1A
-    OUT_Y_H_G = 0x1B
-    OUT_Z_L_G = 0x1C
-    OUT_Z_H_G = 0x1D
-
-    OUT_X_L_XL = 0x28
-    OUT_X_H_XL = 0x29
-    OUT_Y_L_XL = 0x2A
-    OUT_Y_H_XL = 0x2B
-    OUT_Z_L_XL = 0x2C
-    OUT_Z_H_XL = 0x2D
+    OUT_X_L_G, OUT_X_H_G = 0x18, 0x19
+    OUT_Y_L_G, OUT_Y_H_G = 0x1A, 0x1B
+    OUT_Z_L_G, OUT_Z_H_G = 0x1C, 0x1D
+    OUT_X_L_XL, OUT_X_H_XL = 0x28, 0x29
+    OUT_Y_L_XL, OUT_Y_H_XL = 0x2A, 0x2B
+    OUT_Z_L_XL, OUT_Z_H_XL = 0x2C, 0x2D
 
     # --- MAG REGISTER ADDRESSES ---
-    CTRL_REG1_M = 0x20
-    CTRL_REG2_M = 0x21
-    CTRL_REG3_M = 0x22
-    CTRL_REG4_M = 0x23
+    CTRL_REG1_M, CTRL_REG2_M, CTRL_REG3_M, CTRL_REG4_M = 0x20, 0x21, 0x22, 0x23
+    OUT_X_L_M, OUT_X_H_M = 0x28, 0x29
+    OUT_Y_L_M, OUT_Y_H_M = 0x2A, 0x2B
+    OUT_Z_L_M, OUT_Z_H_M = 0x2C, 0x2D
 
-    OUT_X_L_M = 0x28
-    OUT_X_H_M = 0x29
-    OUT_Y_L_M = 0x2A
-    OUT_Y_H_M = 0x2B
-    OUT_Z_L_M = 0x2C
-    OUT_Z_H_M = 0x2D
-
-    # enable gyroscope
-    bus.write_byte_data(ACCEL_GYRO_ADDR, CTRL_REG1_G, 0b11000011)
-    
-    # enable accelerometer
-    bus.write_byte_data(ACCEL_GYRO_ADDR, CTRL_REG6_XL, 0b11000110)
-    
-    # enable magnetometer
-    bus.write_byte_data(MAG_ADDR, CTRL_REG1_M, 0b11111100)
+    # --- Enable sensors ---
+    bus.write_byte_data(ACCEL_GYRO_ADDR, CTRL_REG1_G, 0b11000011) # gyro
+    bus.write_byte_data(ACCEL_GYRO_ADDR, CTRL_REG6_XL, 0b11000110) # accelerometer
+    bus.write_byte_data(MAG_ADDR, CTRL_REG1_M, 0b11111100) # magnetometer
     bus.write_byte_data(MAG_ADDR, CTRL_REG2_M, 0b00000000)
     bus.write_byte_data(MAG_ADDR, CTRL_REG3_M, 0b00000000)
     bus.write_byte_data(MAG_ADDR, CTRL_REG4_M, 0b00001100)
     
-    # init ROS
+    # --- ROS Init ---
     rclpy.init(args=args)
     node = rclpy.create_node('imu_node')
 
     # --- CALIBRATION PARAMS ---
+    # Declare and load accel/gyro/mag parameters
     if not node.has_parameter('accelerometer.bias'):
         node.declare_parameter('accelerometer.bias', [0.0, 0.0, 0.0])
     if not node.has_parameter('gyroscope.bias'):
         node.declare_parameter('gyroscope.bias', [0.0, 0.0, 0.0])
-
+    if not node.has_parameter('magnetometer.hard_iron_bias'):
+        node.declare_parameter('magnetometer.hard_iron_bias', [0.0, 0.0, 0.0])
+    if not node.has_parameter('magnetometer.soft_iron_matrix'):
+        node.declare_parameter('magnetometer.soft_iron_matrix.data', np.identity(3).flatten().tolist())
     accel_bias = node.get_parameter('accelerometer.bias').value
     gyro_bias = node.get_parameter('gyroscope.bias').value
 
-    # log to ros display
-    node.get_logger().info(f"Aceelerometer bias (m/s^2): {accel_bias}")
-    node.get_logger().info(f"Gyroscope bias (rad/s): {gyro_bias}")
+    hard_iron_list = node.get_parameter('magnetometer.hard_iron_bias').get_parameter_value().double_array_value
+    soft_iron_flat_list = node.get_parameter('magnetometer.soft_iron_matrix.data').get_parameter_value().double_array_value
+    
+    mag_hard_iron_bias = np.array(hard_iron_list)
+    mag_soft_iron_matrix = np.array(soft_iron_flat_list).reshape((3, 3))
 
-    # finish the rest of ros setup
+    # Log parameters to ROS display
+    node.get_logger().info(f"Accelerometer bias (m/s^2): {accel_bias}")
+    node.get_logger().info(f"Gyroscope bias (rad/s): {gyro_bias}")
+    node.get_logger().info(f"Magnetometer Hard-Iron Bias (T): {mag_hard_iron_bias.tolist()}")
+    node.get_logger().info(f"Magnetometer Soft-Iron Matrix: \n{mag_soft_iron_matrix}")
+
+    # --- ROS Publishers ---
     pub_imu = node.create_publisher(Imu, '/imu', 10)
     pub_mag = node.create_publisher(MagneticField, '/mag', 10)
 
     node.get_logger().info("IMU Node setup finished! Check calibration params.")
 
-    # Get frames, send frames through published thread 
     while rclpy.ok():
         current_time = node.get_clock().now().to_msg()
         
         # --- Read Gyroscope Data ---
-        out_x_g_l = bus.read_byte_data(ACCEL_GYRO_ADDR, OUT_X_L_G)
-        out_x_g_h = bus.read_byte_data(ACCEL_GYRO_ADDR, OUT_X_H_G)
-        out_x_g = twos_complement((out_x_g_h << 8) | out_x_g_l, 16) * SENSITIVITY_GYROSCOPE_245
-        ############################
-        out_y_g_l = bus.read_byte_data(ACCEL_GYRO_ADDR, OUT_Y_L_G)
-        out_y_g_h = bus.read_byte_data(ACCEL_GYRO_ADDR, OUT_Y_H_G)
-        out_y_g = twos_complement((out_y_g_h << 8) | out_y_g_l, 16) * SENSITIVITY_GYROSCOPE_245
-        ############################
-        out_z_g_l = bus.read_byte_data(ACCEL_GYRO_ADDR, OUT_Z_L_G)
-        out_z_g_h = bus.read_byte_data(ACCEL_GYRO_ADDR, OUT_Z_H_G)
-        out_z_g = twos_complement((out_z_g_h << 8) | out_z_g_l, 16) * SENSITIVITY_GYROSCOPE_245
-
-        # Convert gyro data from dps to rad/s
-        out_x_g = round(out_x_g * (math.pi/180), 10)
-        out_y_g = round(out_y_g * (math.pi/180), 10)
-        out_z_g = round(out_z_g * (math.pi/180), 10)
-
-        # Subtract biases from gyro data
-        out_x_g -= gyro_bias[0]
-        out_y_g -= gyro_bias[1]
-        out_z_g -= gyro_bias[2]
+        out_x_g = twos_complement((bus.read_byte_data(ACCEL_GYRO_ADDR, OUT_X_H_G) << 8) | bus.read_byte_data(ACCEL_GYRO_ADDR, OUT_X_L_G), 16) * SENSITIVITY_GYROSCOPE_245
+        out_y_g = twos_complement((bus.read_byte_data(ACCEL_GYRO_ADDR, OUT_Y_H_G) << 8) | bus.read_byte_data(ACCEL_GYRO_ADDR, OUT_Y_L_G), 16) * SENSITIVITY_GYROSCOPE_245
+        out_z_g = twos_complement((bus.read_byte_data(ACCEL_GYRO_ADDR, OUT_Z_H_G) << 8) | bus.read_byte_data(ACCEL_GYRO_ADDR, OUT_Z_L_G), 16) * SENSITIVITY_GYROSCOPE_245
+        out_x_g, out_y_g, out_z_g = [round(g * (math.pi/180), 10) for g in (out_x_g, out_y_g, out_z_g)]
+        out_x_g -= gyro_bias[0]; out_y_g -= gyro_bias[1]; out_z_g -= gyro_bias[2]
 
         # --- Read Accelerometer Data ---
-        out_x_xl_l = bus.read_byte_data(ACCEL_GYRO_ADDR, OUT_X_L_XL)
-        out_x_xl_h = bus.read_byte_data(ACCEL_GYRO_ADDR, OUT_X_H_XL)
-        out_x_xl = twos_complement((out_x_xl_h << 8) | out_x_xl_l, 16) * SENSITIVITY_ACCELEROMETER_2
-        ############################
-        out_y_xl_l = bus.read_byte_data(ACCEL_GYRO_ADDR, OUT_Y_L_XL)
-        out_y_xl_h = bus.read_byte_data(ACCEL_GYRO_ADDR, OUT_Y_H_XL)
-        out_y_xl = twos_complement((out_y_xl_h << 8) | out_y_xl_l, 16) * SENSITIVITY_ACCELEROMETER_2
-        ############################
-        out_z_xl_l = bus.read_byte_data(ACCEL_GYRO_ADDR, OUT_Z_L_XL)
-        out_z_xl_h = bus.read_byte_data(ACCEL_GYRO_ADDR, OUT_Z_H_XL)
-        out_z_xl = twos_complement((out_z_xl_h << 8) | out_z_xl_l, 16) * SENSITIVITY_ACCELEROMETER_2
-
-        # Convert accel data from g's to m/s^2
-        out_x_xl = round(out_x_xl * 9.80665, 10)
-        out_y_xl = round(out_y_xl * 9.80665, 10)
-        out_z_xl = round(out_z_xl * 9.80665, 10)
-        
-        # Subtract biases from accel data
-        out_x_xl -= accel_bias[0]
-        out_y_xl -= accel_bias[1]
-        out_z_xl -= accel_bias[2]
+        out_x_xl = twos_complement((bus.read_byte_data(ACCEL_GYRO_ADDR, OUT_X_H_XL) << 8) | bus.read_byte_data(ACCEL_GYRO_ADDR, OUT_X_L_XL), 16) * SENSITIVITY_ACCELEROMETER_2
+        out_y_xl = twos_complement((bus.read_byte_data(ACCEL_GYRO_ADDR, OUT_Y_H_XL) << 8) | bus.read_byte_data(ACCEL_GYRO_ADDR, OUT_Y_L_XL), 16) * SENSITIVITY_ACCELEROMETER_2
+        out_z_xl = twos_complement((bus.read_byte_data(ACCEL_GYRO_ADDR, OUT_Z_H_XL) << 8) | bus.read_byte_data(ACCEL_GYRO_ADDR, OUT_Z_L_XL), 16) * SENSITIVITY_ACCELEROMETER_2
+        out_x_xl, out_y_xl, out_z_xl = [round(a * 9.80665, 10) for a in (out_x_xl, out_y_xl, out_z_xl)]
+        out_x_xl -= accel_bias[0]; out_y_xl -= accel_bias[1]; out_z_xl -= accel_bias[2]
 
         # --- Read Magnetometer Data ---
-        out_x_m_l = bus.read_byte_data(MAG_ADDR, OUT_X_L_M)
-        out_x_m_h = bus.read_byte_data(MAG_ADDR, OUT_X_H_M)
-        out_x_m = twos_complement((out_x_m_h << 8) | out_x_m_l, 16) * SENSITIVITY_MAGNETOMETER_4
-        ############################
-        out_y_m_l = bus.read_byte_data(MAG_ADDR, OUT_Y_L_M)
-        out_y_m_h = bus.read_byte_data(MAG_ADDR, OUT_Y_H_M)
-        out_y_m = twos_complement((out_y_m_h << 8) | out_y_m_l, 16) * SENSITIVITY_MAGNETOMETER_4
-        ############################
-        out_z_m_l = bus.read_byte_data(MAG_ADDR, OUT_Z_L_M)
-        out_z_m_h = bus.read_byte_data(MAG_ADDR, OUT_Z_H_M)
-        out_z_m = twos_complement((out_z_m_h << 8) | out_z_m_l, 16) * SENSITIVITY_MAGNETOMETER_4
+        out_x_m = twos_complement((bus.read_byte_data(MAG_ADDR, OUT_X_H_M) << 8) | bus.read_byte_data(MAG_ADDR, OUT_X_L_M), 16) * SENSITIVITY_MAGNETOMETER_4
+        out_y_m = twos_complement((bus.read_byte_data(MAG_ADDR, OUT_Y_H_M) << 8) | bus.read_byte_data(MAG_ADDR, OUT_Y_L_M), 16) * SENSITIVITY_MAGNETOMETER_4
+        out_z_m = twos_complement((bus.read_byte_data(MAG_ADDR, OUT_Z_H_M) << 8) | bus.read_byte_data(MAG_ADDR, OUT_Z_L_M), 16) * SENSITIVITY_MAGNETOMETER_4
+        
+        # Convert magnetometer data from Gauss to Tesla
+        mag_raw = np.array([out_x_m, out_y_m, out_z_m]) * 1e-4
 
-        # Convert magnetometer data from Gauss to Tesla for the MagneticField message
-        out_x_m = out_x_m * 1e-4 
-        out_y_m = out_y_m * 1e-4
-        out_z_m = out_z_m * 1e-4
+        # Apply magnetometer calibration
+        mag_calibrated = mag_soft_iron_matrix @ (mag_raw - mag_hard_iron_bias)
 
         # --- Populate and Publish Imu Message ---
         imu_msg = Imu()
-        imu_msg.header.stamp = current_time
-        imu_msg.header.frame_id = 'imu_link' 
-        imu_msg.angular_velocity.x = out_x_g
-        imu_msg.angular_velocity.y = out_y_g
-        imu_msg.angular_velocity.z = out_z_g
-        imu_msg.linear_acceleration.x = out_x_xl
-        imu_msg.linear_acceleration.y = out_y_xl
-        imu_msg.linear_acceleration.z = out_z_xl
+        imu_msg.header.stamp, imu_msg.header.frame_id = current_time, 'imu_link'
+        imu_msg.angular_velocity.x, imu_msg.angular_velocity.y, imu_msg.angular_velocity.z = out_x_g, out_y_g, out_z_g
+        imu_msg.linear_acceleration.x, imu_msg.linear_acceleration.y, imu_msg.linear_acceleration.z = out_x_xl, out_y_xl, out_z_xl
     
         # --- Populate and Publish MagneticField Message ---
         mag_msg = MagneticField()
-        mag_msg.header.stamp = current_time
-        mag_msg.header.frame_id = 'imu_link' 
-        mag_msg.magnetic_field.x = out_x_m
-        mag_msg.magnetic_field.y = out_y_m
-        mag_msg.magnetic_field.z = out_z_m
-        mag_msg.magnetic_field_covariance = [0.0] * 9 
+        mag_msg.header.stamp, mag_msg.header.frame_id = current_time, 'imu_link'
+        mag_msg.magnetic_field.x = mag_calibrated[0]
+        mag_msg.magnetic_field.y = mag_calibrated[1]
+        mag_msg.magnetic_field.z = mag_calibrated[2]
+        mag_msg.magnetic_field_covariance = [0.0] * 9
 
         pub_imu.publish(imu_msg)
         pub_mag.publish(mag_msg)
