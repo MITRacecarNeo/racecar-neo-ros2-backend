@@ -8,10 +8,17 @@ from launch_ros.actions import Node
 from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
-    config = os.path.join(
+    # Path for the accel/gyro calibration
+    imu_config = os.path.join(
             get_package_share_directory('racecar_neo'),
             'config',
             'lsm9ds1_cal.yaml')
+
+    # Path for the magnetometer calibration
+    mag_config = os.path.join(
+            get_package_share_directory('racecar_neo'),
+            'config',
+            'lsm9ds1_mag_cal.yaml')
 
     return launch.LaunchDescription([
 	Node(
@@ -50,22 +57,24 @@ def generate_launch_description():
 		#executable='decode_camera',
 		#name='image_decoder'
 	#),
-    Node(
-	    package='racecar_neo',
-        executable='imu',
-        name='imu_node',
-	    parameters=[config],
-    ),
-	Node(
+        # The imu_node loads both calibration files
+        Node(
+            package='racecar_neo',
+            executable='imu',
+            name='imu_node',
+            parameters=[imu_config, mag_config], 
+        ),
+
+        Node(
             package='sllidar_ros2',
             executable='sllidar_node',
             name='sllidar_node',
             parameters=[{'channel_type':'serial',
-                         'serial_port': '/dev/ttyUSB0', 
-                         'serial_baudrate':115200, 
+                         'serial_port': '/dev/ttyUSB0',
+                         'serial_baudrate':115200,
                          'frame_id': 'laser',
-                         'inverted':False, 
+                         'inverted':False,
                          'angle_compensate':True}],
             output='screen'
-    ),
+        ),
     ])
