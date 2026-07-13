@@ -11,6 +11,8 @@ import numpy as np
 import yaml
 from datetime import datetime
 import time
+import os
+from ament_index_python.packages import get_package_share_directory
 import threading
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
@@ -22,20 +24,13 @@ class MagnetometerCalibrator(Node):
         self.subscription = None
         self.message_received = threading.Event() # Use a thread-safe event
 
-        # Define a list of QoS profiles to try
-        qos_profiles = [
-            QoSProfile(depth=10, reliability=QoSReliabilityPolicy.BEST_EFFORT),
-            QoSProfile(depth=10, reliability=QoSReliabilityPolicy.RELIABLE),
-        ]
-
-        for i, profile in enumerate(qos_profiles):
-            try:
-                self.subscription = self.create_subscription(
-                    MagneticField, '/mag', self.mag_callback, profile)
-                self.get_logger().info(f"Subscribed to /mag with QoS profile {i+1}.")
-                break
-            except Exception as e:
-                self.get_logger().warn(f"QoS profile {i+1} failed: {e}")
+        self.subscription = self.create_subscription(
+            MagneticField, 
+            '/mag/raw', 
+            self.mag_callback, 
+            10
+        )
+        self.get_logger().info("Subscribed to /mag/raw.")
 
         self.mag_data = []
         self.collecting = False
@@ -190,23 +185,26 @@ class MagnetometerCalibrator(Node):
 
     def save_calibration_file(self):
         """Saves the calibration data to a YAML file."""
-        filename = f'../config/lsm9ds1_mag_cal.yaml'
+        pkg_dir = get_package_share_directory('racecar_neo_ros2_driver')
+        install_file = os.path.join(pkg_dir, 'config', 'lsm9ds1_mag_cal.yaml')
+        src_file = install_file.replace('install/racecar_neo_ros2_driver/share', 'src')
         calibration_data = {
             'magnetometer.hard_iron_bias': self.hard_iron_bias.tolist(),
-            'magnetometer.soft_iron_matrix': {
-                'rows': 3,
-                'columns': 3,
-                'data': self.soft_iron_matrix.flatten().tolist()
-            }
+            'magnetometer.soft_iron_matrix': self.soft_iron_matrix.flatten().tolist()
         }
-        ros2_yaml_format = {'imu_node': {'ros__parameters': calibration_data}}
+        ros2_yaml_format = {'pit_node': {'ros__parameters': calibration_data}}
         
-        with open(filename, 'w') as f:
-            yaml.dump(ros2_yaml_format, f, default_flow_style=False, sort_keys=False)
-        
+        try:
+            with open(install_file, 'w') as f:
+                yaml.dump(ros2_yaml_format, f, default_flow_style=False, indent = 2)
+            with open(src_file, 'w') as f:
+                yaml.dump(ros2_yaml_format, f, default_flow_style=False, indent = 2)
+        except Exception as e:
+            self.get_logger().error(f'Failed to save calibration file: {str(e)}')
+
         self.get_logger().info('=' * 60)
         self.get_logger().info('CALIBRATION COMPLETE')
-        self.get_logger().info(f'Data saved to: {filename}')
+        self.get_logger().info(f'Data saved to: {install_file} and permanent source file: {src_file}')
 
 def main(args=None):
     rclpy.init(args=args)

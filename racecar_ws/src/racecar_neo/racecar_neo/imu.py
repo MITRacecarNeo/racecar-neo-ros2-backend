@@ -66,7 +66,7 @@ def main(args=None):
         node.declare_parameter('gyroscope.bias', [0.0, 0.0, 0.0])
     if not node.has_parameter('magnetometer.hard_iron_bias'):
         node.declare_parameter('magnetometer.hard_iron_bias', [0.0, 0.0, 0.0])
-    if not node.has_parameter('magnetometer.soft_iron_matrix'):
+    if not node.has_parameter('magnetometer.soft_iron_matrix.data'):
         node.declare_parameter('magnetometer.soft_iron_matrix.data', np.identity(3).flatten().tolist())
     accel_bias = node.get_parameter('accelerometer.bias').value
     gyro_bias = node.get_parameter('gyroscope.bias').value
@@ -87,6 +87,9 @@ def main(args=None):
     pub_imu = node.create_publisher(Imu, '/imu', 10)
     pub_mag = node.create_publisher(MagneticField, '/mag', 10)
 
+    pub_imu_raw = node.create_publisher(Imu, '/imu/raw', 10)
+    pub_mag_raw = node.create_publisher(MagneticField, '/mag/raw', 10)
+
     node.get_logger().info("IMU Node setup finished! Check calibration params.")
 
     while rclpy.ok():
@@ -97,6 +100,10 @@ def main(args=None):
         out_y_g = twos_complement((bus.read_byte_data(ACCEL_GYRO_ADDR, OUT_Y_H_G) << 8) | bus.read_byte_data(ACCEL_GYRO_ADDR, OUT_Y_L_G), 16) * SENSITIVITY_GYROSCOPE_245
         out_z_g = twos_complement((bus.read_byte_data(ACCEL_GYRO_ADDR, OUT_Z_H_G) << 8) | bus.read_byte_data(ACCEL_GYRO_ADDR, OUT_Z_L_G), 16) * SENSITIVITY_GYROSCOPE_245
         out_x_g, out_y_g, out_z_g = [round(g * (math.pi/180), 10) for g in (out_x_g, out_y_g, out_z_g)]
+        
+        # Save raw gyro before bias
+        raw_gyro_x, raw_gyro_y, raw_gyro_z = out_x_g, out_y_g, out_z_g 
+        
         out_x_g -= gyro_bias[0]; out_y_g -= gyro_bias[1]; out_z_g -= gyro_bias[2]
 
         # --- Read Accelerometer Data ---
@@ -104,6 +111,10 @@ def main(args=None):
         out_y_xl = twos_complement((bus.read_byte_data(ACCEL_GYRO_ADDR, OUT_Y_H_XL) << 8) | bus.read_byte_data(ACCEL_GYRO_ADDR, OUT_Y_L_XL), 16) * SENSITIVITY_ACCELEROMETER_2
         out_z_xl = twos_complement((bus.read_byte_data(ACCEL_GYRO_ADDR, OUT_Z_H_XL) << 8) | bus.read_byte_data(ACCEL_GYRO_ADDR, OUT_Z_L_XL), 16) * SENSITIVITY_ACCELEROMETER_2
         out_x_xl, out_y_xl, out_z_xl = [round(a * 9.80665, 10) for a in (out_x_xl, out_y_xl, out_z_xl)]
+        
+        # Save raw accel before bias
+        raw_accel_x, raw_accel_y, raw_accel_z = out_x_xl, out_y_xl, out_z_xl
+        
         out_x_xl -= accel_bias[0]; out_y_xl -= accel_bias[1]; out_z_xl -= accel_bias[2]
 
         # --- Read Magnetometer Data ---
@@ -111,11 +122,25 @@ def main(args=None):
         out_y_m = twos_complement((bus.read_byte_data(MAG_ADDR, OUT_Y_H_M) << 8) | bus.read_byte_data(MAG_ADDR, OUT_Y_L_M), 16) * SENSITIVITY_MAGNETOMETER_4
         out_z_m = twos_complement((bus.read_byte_data(MAG_ADDR, OUT_Z_H_M) << 8) | bus.read_byte_data(MAG_ADDR, OUT_Z_L_M), 16) * SENSITIVITY_MAGNETOMETER_4
         
-        # Convert magnetometer data from Gauss to Tesla
+        # Convert magnetometer data from Gauss to Tesla (This is the raw data)
         mag_raw = np.array([out_x_m, out_y_m, out_z_m]) * 1e-4
 
         # Apply magnetometer calibration
         mag_calibrated = mag_soft_iron_matrix @ (mag_raw - mag_hard_iron_bias)
+
+        # --- Populate and Publish RAW Messages ---
+        imu_raw_msg = Imu()
+        imu_raw_msg.header.stamp, imu_raw_msg.header.frame_id = current_time, 'imu_link'
+        imu_raw_msg.angular_velocity.x, imu_raw_msg.angular_velocity.y, imu_raw_msg.angular_velocity.z = raw_gyro_x, raw_gyro_y, raw_gyro_z
+        imu_raw_msg.linear_acceleration.x, imu_raw_msg.linear_acceleration.y, imu_raw_msg.linear_acceleration.z = raw_accel_x, raw_accel_y, raw_accel_z
+        pub_imu_raw.publish(imu_raw_msg)
+        
+        mag_raw_msg = MagneticField()
+        mag_raw_msg.header.stamp, mag_raw_msg.header.frame_id = current_time, 'imu_link'
+        mag_raw_msg.magnetic_field.x = mag_raw[0]
+        mag_raw_msg.magnetic_field.y = mag_raw[1]
+        mag_raw_msg.magnetic_field.z = mag_raw[2]
+        pub_mag_raw.publish(mag_raw_msg)
 
         # --- Populate and Publish Imu Message ---
         imu_msg = Imu()

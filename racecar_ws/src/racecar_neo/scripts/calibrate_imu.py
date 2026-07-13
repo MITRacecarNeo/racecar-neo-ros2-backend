@@ -15,6 +15,8 @@ from datetime import datetime
 import threading
 import time
 import queue
+import os
+from ament_index_python.packages import get_package_share_directory
 
 class IMUCalibrator(Node):
     def __init__(self):
@@ -52,23 +54,14 @@ class IMUCalibrator(Node):
         self.get_logger().info('IMU Calibrator initialized. Trying to connect to /imu...')
         
     def create_subscription_with_qos(self):
-        """Try different QoS profiles to match publisher"""
-        for i, qos in enumerate(self.qos_profiles):
-            try:
-                if self.subscription:
-                    self.destroy_subscription(self.subscription)
-                
-                self.subscription = self.create_subscription(
-                    Imu,
-                    '/imu',
-                    self.imu_callback,
-                    qos
-                )
-                self.get_logger().info(f'Created subscription with QoS profile {i+1}')
-                break
-            except Exception as e:
-                self.get_logger().warn(f'QoS profile {i+1} failed: {e}')
-                continue
+        """Subscribe to the uncalibrated raw topic"""
+        self.subscription = self.create_subscription(
+            Imu,
+            '/imu/lsm9ds1/raw',
+            self.imu_callback,
+            10
+        )
+        self.get_logger().info(f'Created subscription to /imu/raw')
         
     def imu_callback(self, msg):
         """Callback for IMU messages"""
@@ -160,16 +153,20 @@ class IMUCalibrator(Node):
     
     def calculate_accel_bias_6pos(self, all_accel_data):
         """Calculate accelerometer bias from 6-position calibration"""
-        combined_data = []
-        for pos_data in all_accel_data:
-            combined_data.extend(pos_data)
-        
-        if not combined_data:
+        if not all_accel_data:
             return [0.0, 0.0, 0.0]
         
-        data_array = np.array(combined_data)
-        bias = data_array.mean(axis=0)
-        return bias.tolist()
+        position_means = []
+        for pos_data in all_accel_data:
+            if len(pos_data > 0):
+                pos_array = np.array(pos_data)
+                position_means.append(pos_array.mean(axis=0))
+    
+        if not position_means:
+            return [0.0, 0.0, 0.0]
+        
+        final_bias = np.array(position_means).mean(axis=0)
+        return final_bias.tolist()
     
     def run_calibration(self):
         """Run the complete calibration sequence"""
@@ -262,22 +259,27 @@ class IMUCalibrator(Node):
         }
 
         ros2_yaml_header = {
-            'imu_node': {
+            'pit_node': {
                 'ros__parameters': calibration_data
             }
         }
 
-        filename = f'../config/lsm9ds1_cal.yaml'
+        pkg_dir = get_package_share_directory('racecar_neo_ros2_driver')
+        install_file = os.path.join(pkg_dir, 'config', 'lsm9ds1_cal.yaml')
 
-        
+        src_file = install_file.replace('install/racecar_neo_ros2_driver/share', 'src')
+
         try:
-            with open(filename, 'w') as f:
+            with open(install_file, 'w') as f:
+                yaml.dump(ros2_yaml_header, f, default_flow_style=False, indent=2)
+
+            with open(src_file, 'w') as f:
                 yaml.dump(ros2_yaml_header, f, default_flow_style=False, indent=2)
             
             self.get_logger().info('\n' + '=' * 60)
             self.get_logger().info('CALIBRATION COMPLETED')
             self.get_logger().info('=' * 60)
-            self.get_logger().info(f'Calibration saved to: {filename}')
+            self.get_logger().info(f'Calibration saved to: {filename} and permanent source file: {src_file}')
             
             self.get_logger().info('\nCalibration Results:')
             self.get_logger().info('-' * 40)
