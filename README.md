@@ -1,5 +1,9 @@
 # racecar-neo-ros2-backend
-ROS2 backend project for racecar-neo
+**\[DEPRECATED\]** ROS2 backend project for racecar-neo
+
+This project has reached End-of-Life (EOL) and has since been deprecated. For the most up-to-date info on RACECAR Neo, please see the following repository: [racecar_neo_ros2_driver](https://github.com/MITRacecarNeo/racecar_neo_ros2_driver)
+
+__**Setup Instructions**__
 
 Uses Raspberry Pi 4b as compute and Ubuntu 22.04 OS
 
